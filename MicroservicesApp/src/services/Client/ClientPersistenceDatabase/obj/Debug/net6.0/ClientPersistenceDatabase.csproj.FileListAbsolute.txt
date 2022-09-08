@@ -13,3 +13,7 @@ C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersi
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\obj\Debug\net6.0\refint\ClientPersistenceDatabase.dll
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\obj\Debug\net6.0\ClientPersistenceDatabase.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\obj\Debug\net6.0\ref\ClientPersistenceDatabase.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\bin\Debug\net6.0\ClientPersistenceDatabase.Contract.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\bin\Debug\net6.0\Common.Repository.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\bin\Debug\net6.0\ClientPersistenceDatabase.Contract.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\bin\Debug\net6.0\Common.Repository.pdb

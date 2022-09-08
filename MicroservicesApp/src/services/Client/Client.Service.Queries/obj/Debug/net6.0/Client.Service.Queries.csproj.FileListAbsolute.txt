@@ -1,0 +1,12 @@
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\Client.Service.Queries.deps.json
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\Client.Service.Queries.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\Client.Service.Queries.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\obj\Debug\net6.0\Client.Service.Queries.csproj.AssemblyReference.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\obj\Debug\net6.0\Client.Service.Queries.GeneratedMSBuildEditorConfig.editorconfig
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\obj\Debug\net6.0\Client.Service.Queries.AssemblyInfoInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\obj\Debug\net6.0\Client.Service.Queries.AssemblyInfo.cs
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\obj\Debug\net6.0\Client.Service.Queries.csproj.CoreCompileInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\obj\Debug\net6.0\Client.Service.Queries.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\obj\Debug\net6.0\refint\Client.Service.Queries.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\obj\Debug\net6.0\Client.Service.Queries.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\obj\Debug\net6.0\ref\Client.Service.Queries.dll

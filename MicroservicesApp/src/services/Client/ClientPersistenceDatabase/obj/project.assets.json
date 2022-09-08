@@ -607,6 +607,34 @@
         "runtime": {
           "bin/placeholder/ClientDomain.dll": {}
         }
+      },
+      "ClientPersistenceDatabase.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ClientDomain": "1.0.0",
+          "Common.Repository": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/ClientPersistenceDatabase.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClientPersistenceDatabase.Contract.dll": {}
+        }
+      },
+      "Common.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Common.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Repository.dll": {}
+        }
       }
     }
   },
@@ -1777,11 +1805,22 @@
       "type": "project",
       "path": "../ClientDomain/ClientDomain.csproj",
       "msbuildProject": "../ClientDomain/ClientDomain.csproj"
+    },
+    "ClientPersistenceDatabase.Contract/1.0.0": {
+      "type": "project",
+      "path": "../ClientPersistenceDatabase.Contract/ClientPersistenceDatabase.Contract.csproj",
+      "msbuildProject": "../ClientPersistenceDatabase.Contract/ClientPersistenceDatabase.Contract.csproj"
+    },
+    "Common.Repository/1.0.0": {
+      "type": "project",
+      "path": "../../Common/Common.Repository/Common.Repository.csproj",
+      "msbuildProject": "../../Common/Common.Repository/Common.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "ClientDomain >= 1.0.0",
+      "ClientPersistenceDatabase.Contract >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8"
     ]
   },
@@ -1814,6 +1853,9 @@
           "projectReferences": {
             "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\ClientDomain.csproj": {
               "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\ClientDomain.csproj"
+            },
+            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\ClientPersistenceDatabase.Contract.csproj": {
+              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\ClientPersistenceDatabase.Contract.csproj"
             }
           }
         }

@@ -1,0 +1,17 @@
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\obj\Debug\net6.0\MovementPersistenceDatabase.csproj.AssemblyReference.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\obj\Debug\net6.0\MovementPersistenceDatabase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\obj\Debug\net6.0\MovementPersistenceDatabase.AssemblyInfoInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\obj\Debug\net6.0\MovementPersistenceDatabase.AssemblyInfo.cs
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\obj\Debug\net6.0\MovementPersistenceDatabase.csproj.CoreCompileInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\bin\Debug\net6.0\MovementPersistenceDatabase.deps.json
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\bin\Debug\net6.0\MovementPersistenceDatabase.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\bin\Debug\net6.0\MovementPersistenceDatabase.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\bin\Debug\net6.0\MovementDomain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\bin\Debug\net6.0\MovementDomain.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\obj\Debug\net6.0\MovementPersistenceDatabase.csproj.CopyComplete
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\obj\Debug\net6.0\MovementPersistenceDatabase.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\obj\Debug\net6.0\refint\MovementPersistenceDatabase.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\obj\Debug\net6.0\MovementPersistenceDatabase.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\obj\Debug\net6.0\ref\MovementPersistenceDatabase.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\bin\Debug\net6.0\MovementPersistenceDatabase.runtimeconfig.json
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\MovementPersistenceDatabase\obj\Debug\net6.0\MovementPersistenceDatabase.genruntimeconfig.cache

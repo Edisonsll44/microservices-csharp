@@ -1,0 +1,12 @@
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Common\Common.Repository\obj\Debug\net6.0\Common.Repository.csproj.AssemblyReference.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Common\Common.Repository\obj\Debug\net6.0\Common.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Common\Common.Repository\obj\Debug\net6.0\Common.Repository.AssemblyInfoInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Common\Common.Repository\obj\Debug\net6.0\Common.Repository.AssemblyInfo.cs
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Common\Common.Repository\obj\Debug\net6.0\Common.Repository.csproj.CoreCompileInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Common\Common.Repository\bin\Debug\net6.0\Common.Repository.deps.json
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Common\Common.Repository\bin\Debug\net6.0\Common.Repository.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Common\Common.Repository\bin\Debug\net6.0\Common.Repository.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Common\Common.Repository\obj\Debug\net6.0\Common.Repository.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Common\Common.Repository\obj\Debug\net6.0\refint\Common.Repository.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Common\Common.Repository\obj\Debug\net6.0\Common.Repository.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Common\Common.Repository\obj\Debug\net6.0\ref\Common.Repository.dll

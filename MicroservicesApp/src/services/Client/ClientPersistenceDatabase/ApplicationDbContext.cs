@@ -1,10 +1,11 @@
 ﻿using ClientDomain;
 using ClientPersistenceDatabase.Configuration;
+using ClientPersistenceDatabase.Contract;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClientPersistenceDatabase
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : DbContext, IApplicationDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> option) : base(option)
         {

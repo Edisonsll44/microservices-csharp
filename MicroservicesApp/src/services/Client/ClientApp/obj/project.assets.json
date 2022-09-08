@@ -721,6 +721,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "ClientDomain": "1.0.0",
+          "ClientPersistenceDatabase.Contract": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
         },
         "compile": {
@@ -728,6 +729,34 @@
         },
         "runtime": {
           "bin/placeholder/ClientPersistenceDatabase.dll": {}
+        }
+      },
+      "ClientPersistenceDatabase.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ClientDomain": "1.0.0",
+          "Common.Repository": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/ClientPersistenceDatabase.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClientPersistenceDatabase.Contract.dll": {}
+        }
+      },
+      "Common.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Common.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Repository.dll": {}
         }
       }
     }
@@ -2085,6 +2114,16 @@
       "type": "project",
       "path": "../ClientPersistenceDatabase/ClientPersistenceDatabase.csproj",
       "msbuildProject": "../ClientPersistenceDatabase/ClientPersistenceDatabase.csproj"
+    },
+    "ClientPersistenceDatabase.Contract/1.0.0": {
+      "type": "project",
+      "path": "../ClientPersistenceDatabase.Contract/ClientPersistenceDatabase.Contract.csproj",
+      "msbuildProject": "../ClientPersistenceDatabase.Contract/ClientPersistenceDatabase.Contract.csproj"
+    },
+    "Common.Repository/1.0.0": {
+      "type": "project",
+      "path": "../../Common/Common.Repository/Common.Repository.csproj",
+      "msbuildProject": "../../Common/Common.Repository/Common.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {

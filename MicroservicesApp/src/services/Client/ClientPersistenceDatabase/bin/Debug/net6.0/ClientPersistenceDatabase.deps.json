@@ -9,6 +9,7 @@
       "ClientPersistenceDatabase/1.0.0": {
         "dependencies": {
           "ClientDomain": "1.0.0",
+          "ClientPersistenceDatabase.Contract": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
         },
         "runtime": {
@@ -461,6 +462,24 @@
         "runtime": {
           "ClientDomain.dll": {}
         }
+      },
+      "ClientPersistenceDatabase.Contract/1.0.0": {
+        "dependencies": {
+          "ClientDomain": "1.0.0",
+          "Common.Repository": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "runtime": {
+          "ClientPersistenceDatabase.Contract.dll": {}
+        }
+      },
+      "Common.Repository/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "runtime": {
+          "Common.Repository.dll": {}
+        }
       }
     }
   },
@@ -751,6 +770,16 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "ClientDomain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClientPersistenceDatabase.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Common.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
