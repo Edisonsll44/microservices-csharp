@@ -1,0 +1,12 @@
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientDomain\bin\Debug\net6.0\ClientDomain.deps.json
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientDomain\bin\Debug\net6.0\ClientDomain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientDomain\bin\Debug\net6.0\ClientDomain.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientDomain\obj\Debug\net6.0\ClientDomain.csproj.AssemblyReference.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientDomain\obj\Debug\net6.0\ClientDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientDomain\obj\Debug\net6.0\ClientDomain.AssemblyInfoInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientDomain\obj\Debug\net6.0\ClientDomain.AssemblyInfo.cs
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientDomain\obj\Debug\net6.0\ClientDomain.csproj.CoreCompileInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientDomain\obj\Debug\net6.0\ClientDomain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientDomain\obj\Debug\net6.0\refint\ClientDomain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientDomain\obj\Debug\net6.0\ClientDomain.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientDomain\obj\Debug\net6.0\ref\ClientDomain.dll

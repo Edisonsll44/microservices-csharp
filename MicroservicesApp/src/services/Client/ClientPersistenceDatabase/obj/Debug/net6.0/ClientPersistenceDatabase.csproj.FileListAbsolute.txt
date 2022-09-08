@@ -1,0 +1,15 @@
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\bin\Debug\net6.0\ClientPersistenceDatabase.deps.json
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\bin\Debug\net6.0\ClientPersistenceDatabase.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\bin\Debug\net6.0\ClientPersistenceDatabase.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\bin\Debug\net6.0\ClientDomain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\bin\Debug\net6.0\ClientDomain.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\obj\Debug\net6.0\ClientPersistenceDatabase.csproj.AssemblyReference.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\obj\Debug\net6.0\ClientPersistenceDatabase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\obj\Debug\net6.0\ClientPersistenceDatabase.AssemblyInfoInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\obj\Debug\net6.0\ClientPersistenceDatabase.AssemblyInfo.cs
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\obj\Debug\net6.0\ClientPersistenceDatabase.csproj.CoreCompileInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\obj\Debug\net6.0\ClientPersistenceDatabase.csproj.CopyComplete
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\obj\Debug\net6.0\ClientPersistenceDatabase.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\obj\Debug\net6.0\refint\ClientPersistenceDatabase.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\obj\Debug\net6.0\ClientPersistenceDatabase.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase\obj\Debug\net6.0\ref\ClientPersistenceDatabase.dll
