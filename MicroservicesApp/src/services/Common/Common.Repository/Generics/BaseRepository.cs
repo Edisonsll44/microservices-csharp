@@ -39,6 +39,14 @@ namespace Common.Repository.Generics
             return entity;
         }
 
+        public async Task<T> Delete(T entity)
+        {
+            _dbContext.Set<T>().Attach(entity);
+            _dbContext.Entry(entity).State = EntityState.Deleted;
+            await _dbContext.SaveChangesAsync();
+            return entity;
+        }
+
         public virtual TEntity GetOneOrDefault<TEntity>(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = null) where TEntity : class
         {
             return GetQueryable(filter, orderBy, includeProperties).FirstOrDefault();

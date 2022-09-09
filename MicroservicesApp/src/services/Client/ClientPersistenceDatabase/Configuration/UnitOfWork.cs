@@ -19,9 +19,9 @@ namespace Common.Repository.Generics
             return _dbContext.SaveChangesAsync();
         }
 
-        public async Task<int> SaveChangesAsync()
+        public Task<int> SaveChangesAsync()
         {
-            return await _dbContext.SaveChangesAsync();
+            return _dbContext.SaveChangesAsync();
         }
 
         protected void Dispose(bool disposing)

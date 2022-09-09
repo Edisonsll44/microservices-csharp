@@ -15,6 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\ClassLibrary1\DependencyResolver.csproj" />
+    <ProjectReference Include="..\Client.Service.Queries\Client.Service.Queries.csproj" />
     <ProjectReference Include="..\ClientPersistenceDatabase\ClientPersistenceDatabase.csproj" />
   </ItemGroup>
 

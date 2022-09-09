@@ -7,6 +7,7 @@ namespace Common.Repository
         Task<IEnumerable<T>> GetAll();
         Task<T> Update(T entity);
         Task<T> Add(T entity);
+        Task<T> Delete(T entity);
         TEntity GetOneOrDefault<TEntity>(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = null) where TEntity : class;
         IEnumerable<TEntity> GetAll<TEntity>(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = null) where TEntity : class;
         bool GetExists<TEntity>(Expression<Func<TEntity, bool>> filter = null) where TEntity : class;

@@ -1,4 +1,4 @@
-﻿namespace Client.Service.Queries
+﻿namespace Client.Mapper.Dto
 {
     public class ClientDto : PersonaDto
     {

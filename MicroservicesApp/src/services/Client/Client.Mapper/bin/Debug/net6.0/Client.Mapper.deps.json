@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Client.Mapper/1.0.0": {
+        "dependencies": {
+          "ClientDomain": "1.0.0"
+        },
+        "runtime": {
+          "Client.Mapper.dll": {}
+        }
+      },
+      "ClientDomain/1.0.0": {
+        "runtime": {
+          "ClientDomain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Client.Mapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClientDomain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

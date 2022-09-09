@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Client.Mapper\Client.Mapper.csproj" />
+    <ProjectReference Include="..\ClientPersistenceDatabase.Contract\ClientPersistenceDatabase.Contract.csproj" />
+  </ItemGroup>
+
 </Project>

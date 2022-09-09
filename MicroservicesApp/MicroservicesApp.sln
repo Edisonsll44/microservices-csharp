@@ -69,6 +69,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Repository", "src\se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientPersistenceDatabase.Contract", "src\services\Client\ClientPersistenceDatabase.Contract\ClientPersistenceDatabase.Contract.csproj", "{74EB9E8B-4E46-4AB7-A380-F4DE377D8F88}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.DependencyResolver", "05.DependencyResolver", "{B31A7979-66BF-406C-8045-E7A995BE8E63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyResolver", "src\services\Common\ClassLibrary1\DependencyResolver.csproj", "{996A524D-B0FC-44F0-A552-2DFAD461057C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06.Mappers", "06.Mappers", "{5546502D-C556-4DA4-A5DC-D28B3C015F9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client.Mapper", "src\services\Client\Client.Mapper\Client.Mapper.csproj", "{91001B0E-FDFD-444F-B7FB-C64365597678}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +131,14 @@ Global
 		{74EB9E8B-4E46-4AB7-A380-F4DE377D8F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74EB9E8B-4E46-4AB7-A380-F4DE377D8F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74EB9E8B-4E46-4AB7-A380-F4DE377D8F88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{996A524D-B0FC-44F0-A552-2DFAD461057C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{996A524D-B0FC-44F0-A552-2DFAD461057C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{996A524D-B0FC-44F0-A552-2DFAD461057C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{996A524D-B0FC-44F0-A552-2DFAD461057C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91001B0E-FDFD-444F-B7FB-C64365597678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91001B0E-FDFD-444F-B7FB-C64365597678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91001B0E-FDFD-444F-B7FB-C64365597678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91001B0E-FDFD-444F-B7FB-C64365597678}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -158,6 +174,10 @@ Global
 		{A1171077-9FD8-40FF-97FC-944C3191DD78} = {982411B9-12E2-4FAF-AA79-C7982BB16CC9}
 		{DB12D579-6031-4584-8691-9342CD774114} = {A1171077-9FD8-40FF-97FC-944C3191DD78}
 		{74EB9E8B-4E46-4AB7-A380-F4DE377D8F88} = {B0D9785E-517B-41C6-8D69-64E744E2ABBD}
+		{B31A7979-66BF-406C-8045-E7A995BE8E63} = {FB891CDF-7884-45C4-B6D9-BAA1FFB198F8}
+		{996A524D-B0FC-44F0-A552-2DFAD461057C} = {B31A7979-66BF-406C-8045-E7A995BE8E63}
+		{5546502D-C556-4DA4-A5DC-D28B3C015F9B} = {FB891CDF-7884-45C4-B6D9-BAA1FFB198F8}
+		{91001B0E-FDFD-444F-B7FB-C64365597678} = {5546502D-C556-4DA4-A5DC-D28B3C015F9B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {13E456AF-EE51-44E6-A0E4-7440DA1F4726}

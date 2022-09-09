@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "ClientApp/1.0.0": {
         "dependencies": {
+          "Client.Service.Queries": "1.0.0",
           "ClientPersistenceDatabase": "1.0.0",
+          "DependencyResolver": "1.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.8",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
@@ -480,6 +482,23 @@
           }
         }
       },
+      "Client.Mapper/1.0.0": {
+        "dependencies": {
+          "ClientDomain": "1.0.0"
+        },
+        "runtime": {
+          "Client.Mapper.dll": {}
+        }
+      },
+      "Client.Service.Queries/1.0.0": {
+        "dependencies": {
+          "Client.Mapper": "1.0.0",
+          "ClientPersistenceDatabase.Contract": "1.0.0"
+        },
+        "runtime": {
+          "Client.Service.Queries.dll": {}
+        }
+      },
       "ClientDomain/1.0.0": {
         "runtime": {
           "ClientDomain.dll": {}
@@ -511,6 +530,16 @@
         },
         "runtime": {
           "Common.Repository.dll": {}
+        }
+      },
+      "DependencyResolver/1.0.0": {
+        "dependencies": {
+          "Client.Service.Queries": "1.0.0",
+          "ClientPersistenceDatabase": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "DependencyResolver.dll": {}
         }
       }
     }
@@ -864,6 +893,16 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
+    "Client.Mapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Client.Service.Queries/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "ClientDomain/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -880,6 +919,11 @@
       "sha512": ""
     },
     "Common.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DependencyResolver/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

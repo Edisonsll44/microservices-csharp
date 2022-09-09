@@ -1,4 +1,5 @@
 using ClientPersistenceDatabase;
+using DependencyResolver;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,11 +12,13 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //config db
-builder.Services.AddDbContext<ApplicationDbContext>(option =>
-{
-    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
-        x => x.MigrationsHistoryTable("__EFMigrationHystory", "client"));
-});
+//builder.Services.AddDbContext<ApplicationDbContext>(option =>
+//{
+//    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
+//        x => x.MigrationsHistoryTable("__EFMigrationHystory", "client"));
+//});
+IoCRegisterDataContext.AddRegisterContext(builder.Services, builder.Configuration.GetConnectionString("DefaultConnection"));
+IoCRegister.AddRegistration(builder.Services);
 
 var app = builder.Build();
 
