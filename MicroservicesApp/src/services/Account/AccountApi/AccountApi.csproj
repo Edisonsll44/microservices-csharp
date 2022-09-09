@@ -16,7 +16,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Client\ClientPersistenceDatabase\ClientPersistenceDatabase.csproj" />
+    <ProjectReference Include="..\Account.Command.Service\Account.Command.Service.csproj" />
+    <ProjectReference Include="..\Account.Query.Service\Account.Query.Service.csproj" />
     <ProjectReference Include="..\AccountPersistenceDatabase\AccountPersistenceDatabase.csproj" />
+    <ProjectReference Include="..\DependencyResolver\DependencyResolverAccount.csproj" />
   </ItemGroup>
 
 </Project>

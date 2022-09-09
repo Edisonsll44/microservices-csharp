@@ -2,6 +2,7 @@
 using Client.Mapper.Dto;
 using Client.Service.Queries.Contracts;
 using ClientPersistenceDatabase.Contract.Repositories;
+using Common.Repository.Generics;
 using domain = ClientDomain;
 
 namespace Client.Service.Queries.Services
@@ -14,27 +15,44 @@ namespace Client.Service.Queries.Services
         {
             _clientRepository = clientRepository;
         }
-
-        public Task CreateClient(ClientDto dto)
+        /// <summary>
+        /// Crea un nuevo cliente
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        public Task<DtoRespuesta> CreateClient(ClientDto dto)
         {
             var newClient = ClientMapper.MapDtoToEntity(dto);
-            return _clientRepository.Add(newClient);
+            _clientRepository.Create(newClient);
+            _clientRepository.Save();
+            return Respuesta.DevolverRespuesta("Cliente", "creado");
         }
-
-        public async Task DeleteClient(int id)
+        /// <summary>
+        /// Elimina cliente
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Task<DtoRespuesta> DeleteClient(int id)
         {
-            var clientFound = await GetClient(id);
-            var clientToDelete = ClientMapper.MapDtoToEntity(clientFound);
-            await _clientRepository.Delete(clientToDelete);
+            var clientFound = GetClient(id);
+            _clientRepository.Delete(clientFound);
+            return Respuesta.DevolverRespuesta("Cliente", "eliminado");
         }
-
-        public async Task<ClientDto> GetClient(int id)
+        /// <summary>
+        /// Devuelve el cliente por Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public ClientDto GetClient(int id)
         {
-            var client = await _clientRepository.GetByIdAsync<domain.Client>(id);
+            var client = _clientRepository.GetById<domain.Client>(id);
             var clientDto = ClientMapper.MapEntityToDto(client);
             return clientDto;
         }
-
+        /// <summary>
+        /// Devuelve todos los clientes
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<ClientDto> GetClients()
         {
             var clientsDto = new List<ClientDto>();
@@ -43,9 +61,22 @@ namespace Client.Service.Queries.Services
             return dtos;
         }
 
-        public Task UpdateClient(ClientDto dto)
+        public Task<DtoRespuesta> UpdateClient(ClientDto dto)
         {
-            throw new NotImplementedException();
+            var client = _clientRepository.GetById<domain.Client>(dto.ClientId);
+            var clientModified = ClientMapper.MapDtoIntoEntity(dto, client);
+            _clientRepository.Update(clientModified);
+            _clientRepository.Save();
+            return Respuesta.DevolverRespuesta("Cliente", "modificado");
+        }
+
+        public Task<DtoRespuesta> UpdateClient(int id, ClientDto dto)
+        {
+            var client = _clientRepository.GetById<domain.Client>(id);
+            var clientModified = ClientMapper.MapDtoIntoEntity(dto, client);
+            _clientRepository.Update(clientModified);
+            _clientRepository.Save();
+            return Respuesta.DevolverRespuesta("Cliente", "modificado");
         }
     }
 }

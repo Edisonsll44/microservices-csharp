@@ -1,17 +1,12 @@
-﻿using ClientDomain;
-using ClientPersistenceDatabase.Contract;
-using ClientPersistenceDatabase.Contract.Repositories;
+﻿using ClientPersistenceDatabase.Contract.Repositories;
 using Common.Repository.Generics;
-using Microsoft.EntityFrameworkCore;
 
 namespace ClientPersistenceDatabase.Repositories
 {
-    public class ClientRepository : GenericRepository<Client>, IClientRepository
+    public class ClientRepository : EntityFrameworkReadOnlyRepository<ApplicationDbContext>, IClientRepository
     {
-        public ClientRepository(IApplicationDbContext applicationDbContext) : base(applicationDbContext)
+        public ClientRepository(ApplicationDbContext Context) : base(Context)
         {
         }
-
-        protected override DbSet<Client> DbEntity => _applicationDbContext.Clients;
     }
 }

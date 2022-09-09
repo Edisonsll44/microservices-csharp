@@ -21,7 +21,7 @@ namespace ClientApp.Controllers
         {
             try
             {
-                var t = await _clientQueryService.GetClient(1);
+                var t = _clientQueryService.GetClient(1);
                 return t.Telefono;
             }
             catch (Exception ex)

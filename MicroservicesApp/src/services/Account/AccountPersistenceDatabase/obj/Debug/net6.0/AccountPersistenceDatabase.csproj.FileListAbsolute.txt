@@ -28,3 +28,5 @@ C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPer
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\obj\Debug\net6.0\AccountPersistenceDatabase.csproj.CoreCompileInputs.cache
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\obj\Debug\net6.0\AccountPersistenceDatabase.csproj.CopyComplete
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\obj\Debug\net6.0\ref\AccountPersistenceDatabase.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\bin\Debug\net6.0\Common.Repository.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\bin\Debug\net6.0\Common.Repository.pdb

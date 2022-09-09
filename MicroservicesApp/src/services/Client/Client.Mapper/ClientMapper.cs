@@ -36,6 +36,21 @@ namespace Client.Mapper
             };
         }
 
+
+        public static domain.Client MapDtoIntoEntity(ClientDto dto, domain.Client client)
+        {
+
+            client.Direccion = dto.Direccion;
+            client.Edad = dto.Edad;
+            client.Genero = dto.Genero;
+            client.Identificacion = dto.Identificacion;
+            client.Nombre = dto.Nombre;
+            client.Pasword = dto.Pasword;
+            client.State = dto.State;
+            client.Telefono = dto.Telefono;
+            return client;
+        }
+
         public static IEnumerable<ClientDto> MapEntityToDtoCollection(IEnumerable<domain.Client> clients)
         {
             var clientsDto = new List<ClientDto>();

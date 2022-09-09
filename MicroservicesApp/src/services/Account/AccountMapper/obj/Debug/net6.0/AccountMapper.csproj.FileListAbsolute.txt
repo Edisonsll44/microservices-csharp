@@ -1,0 +1,15 @@
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\bin\Debug\net6.0\AccountMapper.deps.json
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\bin\Debug\net6.0\AccountMapper.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\bin\Debug\net6.0\AccountMapper.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\obj\Debug\net6.0\AccountMapper.csproj.AssemblyReference.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\obj\Debug\net6.0\AccountMapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\obj\Debug\net6.0\AccountMapper.AssemblyInfoInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\obj\Debug\net6.0\AccountMapper.AssemblyInfo.cs
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\obj\Debug\net6.0\AccountMapper.csproj.CoreCompileInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\obj\Debug\net6.0\AccountMapper.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\obj\Debug\net6.0\refint\AccountMapper.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\obj\Debug\net6.0\AccountMapper.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\obj\Debug\net6.0\ref\AccountMapper.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\bin\Debug\net6.0\AccountDomain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\bin\Debug\net6.0\AccountDomain.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountMapper\obj\Debug\net6.0\AccountMapper.csproj.CopyComplete

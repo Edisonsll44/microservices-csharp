@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4qq/J3YRZIQ50KVoWTlRyfp7QqeQ7stOQMrLgdrpRELcErj8m3tLn62ObHRJUKDb2PyShid6oiAZHrudYEyqaA==",
+  "dgSpecHash": "hBAXsSVjkE5IgJTR+o36HiNx7mad0jKH2E2YTor+noYejnep40jOTD8JuqsEebM7QFalAPBoXYasnqEUaf3skQ==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\ClientPersistenceDatabase.Contract.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\edison.sanchez\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

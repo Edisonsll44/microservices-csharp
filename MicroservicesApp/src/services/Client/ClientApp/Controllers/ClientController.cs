@@ -1,5 +1,6 @@
 ﻿using Client.Mapper.Dto;
 using Client.Service.Queries.Contracts;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ClientApp.Controllers
@@ -25,7 +26,7 @@ namespace ClientApp.Controllers
         {
             try
             {
-                return Ok(await _clientQueryService.GetClient(id));
+                return Ok(_clientQueryService.GetClient(id));
             }
             catch (Exception e)
             {
@@ -81,21 +82,22 @@ namespace ClientApp.Controllers
             }
         }
 
-        [HttpPatch]
-        [Route("PatchClient")]
-        public async Task<IActionResult> PatchClient(ClientDto dto)
-        {
-            try
-            {
-                await _clientQueryService.UpdateClient(dto);
-                return Ok();
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(e.Message);
-                throw new Exception(e.Message);
-            }
-        }
+        //[HttpPatch]
+        //[Route("PatchClient")]
+        //public async Task<IActionResult> PatchClient(int id, [FromBody] JsonPatchDocument<ClientDto> dto)
+        //{
+        //    try
+        //    {
+        //        var f = dto;
+        //        await _clientQueryService.UpdateClient(id, null);
+        //        return Ok();
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        _logger.LogError(e.Message);
+        //        throw new Exception(e.Message);
+        //    }
+        //}
 
         [HttpDelete]
         [Route("DeleteClient")]

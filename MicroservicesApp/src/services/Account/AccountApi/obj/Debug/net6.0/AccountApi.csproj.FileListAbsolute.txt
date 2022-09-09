@@ -70,3 +70,17 @@ C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Common.Repository.dll
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\ClientPersistenceDatabase.Contract.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Common.Repository.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\obj\Debug\net6.0\AccountApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Client.Mapper.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Client.Service.Queries.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Client.Mapper.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Client.Service.Queries.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Account.Command.Service.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Account.Query.Service.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\AccountMapper.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Account.Command.Service.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Account.Query.Service.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\AccountMapper.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\DependencyResolverAccount.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\DependencyResolverAccount.pdb

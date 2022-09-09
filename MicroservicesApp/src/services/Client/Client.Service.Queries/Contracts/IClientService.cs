@@ -4,11 +4,12 @@ namespace Client.Service.Queries.Contracts
 {
     public interface IClientQueryService
     {
-        Task<ClientDto> GetClient(int id);
+        ClientDto GetClient(int id);
         IEnumerable<ClientDto> GetClients();
 
-        Task CreateClient(ClientDto dto);
-        Task UpdateClient(ClientDto dto);
-        Task DeleteClient(int id);
+        Task<DtoRespuesta> CreateClient(ClientDto dto);
+        Task<DtoRespuesta> UpdateClient(ClientDto dto);
+        Task<DtoRespuesta> UpdateClient(int id, ClientDto dto);
+        Task<DtoRespuesta> DeleteClient(int id);
     }
 }

@@ -153,8 +153,8 @@
               "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase\\ClientPersistenceDatabase.csproj": {
                 "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase\\ClientPersistenceDatabase.csproj"
               },
-              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\DependencyResolver.csproj": {
-                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\DependencyResolver.csproj"
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\DependencyResolverClient.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\DependencyResolverClient.csproj"
               }
             }
           }
@@ -169,6 +169,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.JsonPatch": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -390,12 +394,12 @@
         }
       }
     },
-    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\DependencyResolver.csproj": {
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\DependencyResolverClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\DependencyResolver.csproj",
-        "projectName": "DependencyResolver",
-        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\DependencyResolver.csproj",
+        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\DependencyResolverClient.csproj",
+        "projectName": "DependencyResolverClient",
+        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\DependencyResolverClient.csproj",
         "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
         "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
@@ -496,6 +500,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

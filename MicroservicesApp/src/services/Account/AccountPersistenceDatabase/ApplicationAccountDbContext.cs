@@ -2,9 +2,9 @@
 using AccountPersistenceDatabase.Configuration;
 using Microsoft.EntityFrameworkCore;
 
-namespace ApplicationDbContext
+namespace AccountPersistenceDatabase
 {
-    public class ApplicationAccountDbContext : DbContext
+    public class ApplicationAccountDbContext : DbContext, IApplicationAccountDbContext
     {
         public ApplicationAccountDbContext(DbContextOptions<ApplicationAccountDbContext> option) : base(option)
         {

@@ -8,8 +8,11 @@
     ".NETCoreApp,Version=v6.0": {
       "AccountApi/1.0.0": {
         "dependencies": {
+          "Account.Command.Service": "1.0.0",
+          "Account.Query.Service": "1.0.0",
           "AccountPersistenceDatabase": "1.0.0",
           "ClientPersistenceDatabase": "1.0.0",
+          "DependencyResolverAccount": "1.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.8",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
@@ -303,6 +306,14 @@
           }
         }
       },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
@@ -481,18 +492,65 @@
           }
         }
       },
+      "Account.Command.Service/1.0.0": {
+        "dependencies": {
+          "Account.Query.Service": "1.0.0",
+          "AccountMapper": "1.0.0",
+          "AccountPersistenceDatabase": "1.0.0",
+          "Client.Mapper": "1.0.0",
+          "Common.Repository": "1.0.0"
+        },
+        "runtime": {
+          "Account.Command.Service.dll": {}
+        }
+      },
+      "Account.Query.Service/1.0.0": {
+        "dependencies": {
+          "AccountMapper": "1.0.0",
+          "AccountPersistenceDatabase": "1.0.0"
+        },
+        "runtime": {
+          "Account.Query.Service.dll": {}
+        }
+      },
       "AccountDomain/1.0.0": {
         "runtime": {
           "AccountDomain.dll": {}
         }
       },
+      "AccountMapper/1.0.0": {
+        "dependencies": {
+          "AccountDomain": "1.0.0"
+        },
+        "runtime": {
+          "AccountMapper.dll": {}
+        }
+      },
       "AccountPersistenceDatabase/1.0.0": {
         "dependencies": {
           "AccountDomain": "1.0.0",
+          "Common.Repository": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
         },
         "runtime": {
           "AccountPersistenceDatabase.dll": {}
+        }
+      },
+      "Client.Mapper/1.0.0": {
+        "dependencies": {
+          "ClientDomain": "1.0.0"
+        },
+        "runtime": {
+          "Client.Mapper.dll": {}
+        }
+      },
+      "Client.Service.Queries/1.0.0": {
+        "dependencies": {
+          "Client.Mapper": "1.0.0",
+          "ClientPersistenceDatabase.Contract": "1.0.0"
+        },
+        "runtime": {
+          "Client.Service.Queries.dll": {}
         }
       },
       "ClientDomain/1.0.0": {
@@ -522,10 +580,23 @@
       },
       "Common.Repository/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
+          "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "Common.Repository.dll": {}
+        }
+      },
+      "DependencyResolverAccount/1.0.0": {
+        "dependencies": {
+          "Account.Command.Service": "1.0.0",
+          "Account.Query.Service": "1.0.0",
+          "AccountPersistenceDatabase": "1.0.0",
+          "Client.Service.Queries": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "DependencyResolverAccount.dll": {}
         }
       }
     }
@@ -753,6 +824,13 @@
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
     },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
     "Swashbuckle.AspNetCore/6.2.3": {
       "type": "package",
       "serviceable": true,
@@ -879,12 +957,37 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
+    "Account.Command.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Account.Query.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "AccountDomain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
+    "AccountMapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "AccountPersistenceDatabase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Client.Mapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Client.Service.Queries/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -905,6 +1008,11 @@
       "sha512": ""
     },
     "Common.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DependencyResolverAccount/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

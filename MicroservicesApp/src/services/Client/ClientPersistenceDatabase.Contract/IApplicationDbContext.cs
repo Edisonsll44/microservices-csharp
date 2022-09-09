@@ -1,5 +1,5 @@
 ﻿using ClientDomain;
-using Common.Repository;
+using Common.Repository.Generics;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClientPersistenceDatabase.Contract

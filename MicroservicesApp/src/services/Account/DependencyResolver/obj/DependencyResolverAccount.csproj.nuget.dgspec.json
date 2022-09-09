@@ -1,0 +1,695 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\DependencyResolver\\DependencyResolverAccount.csproj": {}
+  },
+  "projects": {
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Command.Service\\Account.Command.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Command.Service\\Account.Command.Service.csproj",
+        "projectName": "Account.Command.Service",
+        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Command.Service\\Account.Command.Service.csproj",
+        "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
+        "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Command.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\edison.sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Query.Service\\Account.Query.Service.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Query.Service\\Account.Query.Service.csproj"
+              },
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\AccountMapper.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\AccountMapper.csproj"
+              },
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj"
+              },
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Mapper\\Client.Mapper.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Mapper\\Client.Mapper.csproj"
+              },
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\Common.Repository.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\Common.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Query.Service\\Account.Query.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Query.Service\\Account.Query.Service.csproj",
+        "projectName": "Account.Query.Service",
+        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Query.Service\\Account.Query.Service.csproj",
+        "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
+        "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Query.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\edison.sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\AccountMapper.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\AccountMapper.csproj"
+              },
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj",
+        "projectName": "AccountDomain",
+        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj",
+        "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
+        "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\edison.sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\AccountMapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\AccountMapper.csproj",
+        "projectName": "AccountMapper",
+        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\AccountMapper.csproj",
+        "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
+        "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\edison.sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj",
+        "projectName": "AccountPersistenceDatabase",
+        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj",
+        "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
+        "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\edison.sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj"
+              },
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\Common.Repository.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\Common.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\DependencyResolver\\DependencyResolverAccount.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\DependencyResolver\\DependencyResolverAccount.csproj",
+        "projectName": "DependencyResolverAccount",
+        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\DependencyResolver\\DependencyResolverAccount.csproj",
+        "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
+        "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\DependencyResolver\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\edison.sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Command.Service\\Account.Command.Service.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Command.Service\\Account.Command.Service.csproj"
+              },
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Query.Service\\Account.Query.Service.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Query.Service\\Account.Query.Service.csproj"
+              },
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj"
+              },
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Service.Queries\\Client.Service.Queries.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Service.Queries\\Client.Service.Queries.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Mapper\\Client.Mapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Mapper\\Client.Mapper.csproj",
+        "projectName": "Client.Mapper",
+        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Mapper\\Client.Mapper.csproj",
+        "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
+        "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Mapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\edison.sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\ClientDomain.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\ClientDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Service.Queries\\Client.Service.Queries.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Service.Queries\\Client.Service.Queries.csproj",
+        "projectName": "Client.Service.Queries",
+        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Service.Queries\\Client.Service.Queries.csproj",
+        "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
+        "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Service.Queries\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\edison.sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Mapper\\Client.Mapper.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Mapper\\Client.Mapper.csproj"
+              },
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\ClientPersistenceDatabase.Contract.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\ClientPersistenceDatabase.Contract.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\ClientDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\ClientDomain.csproj",
+        "projectName": "ClientDomain",
+        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\ClientDomain.csproj",
+        "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
+        "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\edison.sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\ClientPersistenceDatabase.Contract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\ClientPersistenceDatabase.Contract.csproj",
+        "projectName": "ClientPersistenceDatabase.Contract",
+        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\ClientPersistenceDatabase.Contract.csproj",
+        "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
+        "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\edison.sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\ClientDomain.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\ClientDomain.csproj"
+              },
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\Common.Repository.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\Common.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\Common.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\Common.Repository.csproj",
+        "projectName": "Common.Repository",
+        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\Common.Repository.csproj",
+        "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
+        "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\edison.sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

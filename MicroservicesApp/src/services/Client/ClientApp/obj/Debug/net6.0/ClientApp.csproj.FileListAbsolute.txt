@@ -68,8 +68,10 @@ C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\b
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\bin\Debug\net6.0\Common.Repository.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\bin\Debug\net6.0\Client.Service.Queries.dll
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\bin\Debug\net6.0\Client.Service.Queries.pdb
-C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\bin\Debug\net6.0\DependencyResolver.dll
-C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\bin\Debug\net6.0\DependencyResolver.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\obj\Debug\net6.0\ClientApp.MvcApplicationPartsAssemblyInfo.cs
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\bin\Debug\net6.0\Client.Mapper.dll
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\bin\Debug\net6.0\Client.Mapper.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\bin\Debug\net6.0\DependencyResolverClient.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\bin\Debug\net6.0\DependencyResolverClient.pdb
