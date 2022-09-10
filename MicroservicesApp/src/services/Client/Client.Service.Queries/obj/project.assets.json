@@ -607,11 +607,21 @@
           }
         }
       },
+      "Client.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Client.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Client.Domain.dll": {}
+        }
+      },
       "Client.Mapper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "ClientDomain": "1.0.0"
+          "Client.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Client.Mapper.dll": {}
@@ -620,29 +630,19 @@
           "bin/placeholder/Client.Mapper.dll": {}
         }
       },
-      "ClientDomain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/ClientDomain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ClientDomain.dll": {}
-        }
-      },
-      "ClientPersistenceDatabase.Contract/1.0.0": {
+      "Client.PersistenceDatabase.Contract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "ClientDomain": "1.0.0",
+          "Client.Domain": "1.0.0",
           "Common.Repository": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
         },
         "compile": {
-          "bin/placeholder/ClientPersistenceDatabase.Contract.dll": {}
+          "bin/placeholder/Client.PersistenceDatabase.Contract.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ClientPersistenceDatabase.Contract.dll": {}
+          "bin/placeholder/Client.PersistenceDatabase.Contract.dll": {}
         }
       },
       "Common.Repository/1.0.0": {
@@ -1851,20 +1851,20 @@
         "version.txt"
       ]
     },
+    "Client.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ClientDomain/Client.Domain.csproj",
+      "msbuildProject": "../ClientDomain/Client.Domain.csproj"
+    },
     "Client.Mapper/1.0.0": {
       "type": "project",
       "path": "../Client.Mapper/Client.Mapper.csproj",
       "msbuildProject": "../Client.Mapper/Client.Mapper.csproj"
     },
-    "ClientDomain/1.0.0": {
+    "Client.PersistenceDatabase.Contract/1.0.0": {
       "type": "project",
-      "path": "../ClientDomain/ClientDomain.csproj",
-      "msbuildProject": "../ClientDomain/ClientDomain.csproj"
-    },
-    "ClientPersistenceDatabase.Contract/1.0.0": {
-      "type": "project",
-      "path": "../ClientPersistenceDatabase.Contract/ClientPersistenceDatabase.Contract.csproj",
-      "msbuildProject": "../ClientPersistenceDatabase.Contract/ClientPersistenceDatabase.Contract.csproj"
+      "path": "../ClientPersistenceDatabase.Contract/Client.PersistenceDatabase.Contract.csproj",
+      "msbuildProject": "../ClientPersistenceDatabase.Contract/Client.PersistenceDatabase.Contract.csproj"
     },
     "Common.Repository/1.0.0": {
       "type": "project",
@@ -1875,7 +1875,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Client.Mapper >= 1.0.0",
-      "ClientPersistenceDatabase.Contract >= 1.0.0"
+      "Client.PersistenceDatabase.Contract >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1908,8 +1908,8 @@
             "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Mapper\\Client.Mapper.csproj": {
               "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Mapper\\Client.Mapper.csproj"
             },
-            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\ClientPersistenceDatabase.Contract.csproj": {
-              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\ClientPersistenceDatabase.Contract.csproj"
+            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\Client.PersistenceDatabase.Contract.csproj": {
+              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\Client.PersistenceDatabase.Contract.csproj"
             }
           }
         }

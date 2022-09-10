@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pi/8zrNfya3I40ziLPyyO/Nsu6CVGReoZFPLxNedRO9xleaflwmL5x7k02D4A872IeW57grnZjne98cD++il8Q==",
+  "dgSpecHash": "khltWbgS165WHAY0Rg+NewHxwJMdUNB8uJbk7j1s0Ok7pUYid+V55GSKQ8Sw78+feB3T6ECBG5EubvPzYnEkFg==",
   "success": true,
-  "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\MovementDomain\\MovementDomain.csproj",
+  "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\MovementDomain\\Movement.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

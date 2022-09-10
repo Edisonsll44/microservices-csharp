@@ -9,7 +9,7 @@
       "Client.Service.Queries/1.0.0": {
         "dependencies": {
           "Client.Mapper": "1.0.0",
-          "ClientPersistenceDatabase.Contract": "1.0.0"
+          "Client.PersistenceDatabase.Contract": "1.0.0"
         },
         "runtime": {
           "Client.Service.Queries.dll": {}
@@ -465,27 +465,27 @@
           }
         }
       },
+      "Client.Domain/1.0.0": {
+        "runtime": {
+          "Client.Domain.dll": {}
+        }
+      },
       "Client.Mapper/1.0.0": {
         "dependencies": {
-          "ClientDomain": "1.0.0"
+          "Client.Domain": "1.0.0"
         },
         "runtime": {
           "Client.Mapper.dll": {}
         }
       },
-      "ClientDomain/1.0.0": {
-        "runtime": {
-          "ClientDomain.dll": {}
-        }
-      },
-      "ClientPersistenceDatabase.Contract/1.0.0": {
+      "Client.PersistenceDatabase.Contract/1.0.0": {
         "dependencies": {
-          "ClientDomain": "1.0.0",
+          "Client.Domain": "1.0.0",
           "Common.Repository": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
         },
         "runtime": {
-          "ClientPersistenceDatabase.Contract.dll": {}
+          "Client.PersistenceDatabase.Contract.dll": {}
         }
       },
       "Common.Repository/1.0.0": {
@@ -792,17 +792,17 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
+    "Client.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Client.Mapper/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "ClientDomain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ClientPersistenceDatabase.Contract/1.0.0": {
+    "Client.PersistenceDatabase.Contract/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

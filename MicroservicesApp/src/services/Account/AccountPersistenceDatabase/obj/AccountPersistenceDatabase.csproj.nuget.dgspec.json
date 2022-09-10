@@ -4,12 +4,12 @@
     "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj": {}
   },
   "projects": {
-    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj": {
+    "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\Account.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj",
-        "projectName": "AccountDomain",
-        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj",
+        "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\Account.Domain.csproj",
+        "projectName": "Account.Domain",
+        "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\Account.Domain.csproj",
         "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
         "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\obj\\",
         "projectStyle": "PackageReference",
@@ -82,8 +82,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj": {
-                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj"
+              "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\Account.Domain.csproj": {
+                "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\Account.Domain.csproj"
               },
               "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\Common.Repository.csproj": {
                 "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\Common.Repository.csproj"

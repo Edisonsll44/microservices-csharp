@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iBIDz6lUhB0mqX7KesE55NaPld+aioSHon98N/vf4TgMEKmH7bJdFAeSslhFtJPeL/05ksilYbTO+D0P6sbvpQ==",
+  "dgSpecHash": "vgbrUHF4O6PZEY8IDY0lVWexMvmVepJSrTWOV0MoH7b59muY/Gh2mMYh+j8BviHpwwS6yu03RI7cha2mJwA21w==",
   "success": true,
-  "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\DependencyResolverClient.csproj",
+  "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\Client.DependencyResolver.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

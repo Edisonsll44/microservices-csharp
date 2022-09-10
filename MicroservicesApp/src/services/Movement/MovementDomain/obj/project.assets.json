@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\MovementDomain\\MovementDomain.csproj",
-      "projectName": "MovementDomain",
-      "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\MovementDomain\\MovementDomain.csproj",
+      "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\MovementDomain\\Movement.Domain.csproj",
+      "projectName": "Movement.Domain",
+      "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\MovementDomain\\Movement.Domain.csproj",
       "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
       "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\MovementDomain\\obj\\",
       "projectStyle": "PackageReference",

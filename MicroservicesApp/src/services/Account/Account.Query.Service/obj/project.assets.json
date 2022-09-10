@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "MediatR/10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MediatR.Contracts": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        }
+      },
+      "MediatR.Contracts/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -607,42 +628,43 @@
           }
         }
       },
-      "AccountDomain/1.0.0": {
+      "Account.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/AccountDomain.dll": {}
+          "bin/placeholder/Account.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AccountDomain.dll": {}
+          "bin/placeholder/Account.Domain.dll": {}
         }
       },
-      "AccountMapper/1.0.0": {
+      "Account.Mapper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "AccountDomain": "1.0.0"
+          "Account.Domain": "1.0.0",
+          "MediatR": "10.0.1"
         },
         "compile": {
-          "bin/placeholder/AccountMapper.dll": {}
+          "bin/placeholder/Account.Mapper.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AccountMapper.dll": {}
+          "bin/placeholder/Account.Mapper.dll": {}
         }
       },
-      "AccountPersistenceDatabase/1.0.0": {
+      "Account.PersistenceDatabase/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "AccountDomain": "1.0.0",
+          "Account.Domain": "1.0.0",
           "Common.Repository": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
         },
         "compile": {
-          "bin/placeholder/AccountPersistenceDatabase.dll": {}
+          "bin/placeholder/Account.PersistenceDatabase.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AccountPersistenceDatabase.dll": {}
+          "bin/placeholder/Account.PersistenceDatabase.dll": {}
         }
       },
       "Common.Repository/1.0.0": {
@@ -662,6 +684,36 @@
     }
   },
   "libraries": {
+    "MediatR/10.0.1": {
+      "sha512": "vnjbk4giDJzJelh34Ygt0eorApCKrRFB7j0pauFPY1oxfO3cEZ7FugBrIOjCM76SDGTOmPFfbfmVnz1t3iFrGA==",
+      "type": "package",
+      "path": "mediatr/10.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.10.0.1.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Contracts/1.0.1": {
+      "sha512": "NsRvOxthhkYml4DcBMyJsmym8C4MchioH7wxKVPEg7plFj9Euh/i4IcmZ3Gvgx6+K8obeuhPeJdoBl56wnuo3A==",
+      "type": "package",
+      "path": "mediatr.contracts/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net461/MediatR.Contracts.dll",
+        "lib/net461/MediatR.Contracts.xml",
+        "lib/netstandard2.0/MediatR.Contracts.dll",
+        "lib/netstandard2.0/MediatR.Contracts.xml",
+        "mediatr.contracts.1.0.1.nupkg.sha512",
+        "mediatr.contracts.nuspec"
+      ]
+    },
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
@@ -1851,20 +1903,20 @@
         "version.txt"
       ]
     },
-    "AccountDomain/1.0.0": {
+    "Account.Domain/1.0.0": {
       "type": "project",
-      "path": "../AccountDomain/AccountDomain.csproj",
-      "msbuildProject": "../AccountDomain/AccountDomain.csproj"
+      "path": "../AccountDomain/Account.Domain.csproj",
+      "msbuildProject": "../AccountDomain/Account.Domain.csproj"
     },
-    "AccountMapper/1.0.0": {
+    "Account.Mapper/1.0.0": {
       "type": "project",
-      "path": "../AccountMapper/AccountMapper.csproj",
-      "msbuildProject": "../AccountMapper/AccountMapper.csproj"
+      "path": "../AccountMapper/Account.Mapper.csproj",
+      "msbuildProject": "../AccountMapper/Account.Mapper.csproj"
     },
-    "AccountPersistenceDatabase/1.0.0": {
+    "Account.PersistenceDatabase/1.0.0": {
       "type": "project",
-      "path": "../AccountPersistenceDatabase/AccountPersistenceDatabase.csproj",
-      "msbuildProject": "../AccountPersistenceDatabase/AccountPersistenceDatabase.csproj"
+      "path": "../AccountPersistenceDatabase/Account.PersistenceDatabase.csproj",
+      "msbuildProject": "../AccountPersistenceDatabase/Account.PersistenceDatabase.csproj"
     },
     "Common.Repository/1.0.0": {
       "type": "project",
@@ -1874,8 +1926,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "AccountMapper >= 1.0.0",
-      "AccountPersistenceDatabase >= 1.0.0"
+      "Account.Mapper >= 1.0.0",
+      "Account.PersistenceDatabase >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1905,11 +1957,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\AccountMapper.csproj": {
-              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\AccountMapper.csproj"
+            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\Account.Mapper.csproj": {
+              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\Account.Mapper.csproj"
             },
-            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj": {
-              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj"
+            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\Account.PersistenceDatabase.csproj": {
+              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\Account.PersistenceDatabase.csproj"
             }
           }
         }

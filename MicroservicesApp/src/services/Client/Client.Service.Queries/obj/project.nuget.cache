@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uKBRGKUEVRQziuTSotZT05LBKf1vlbGYR9jVplyiSX6okDhTD+ohum463jyj/MtBCzridtPj0aK1CHE7XpWqyQ==",
+  "dgSpecHash": "sYKPGwXNcKgA05AprUwPhXxHsBoxrbSvYUA+hQNbxqURO1Sg8SoxU/BIW6S0Zyr5eJKK8T4yr9+XsvMYDqxQYw==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Service.Queries\\Client.Service.Queries.csproj",
   "expectedPackageFiles": [

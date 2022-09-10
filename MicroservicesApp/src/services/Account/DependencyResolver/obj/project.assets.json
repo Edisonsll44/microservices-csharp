@@ -2,7 +2,41 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Microsoft.CSharp/4.5.0": {
+      "MediatR/10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MediatR.Contracts": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        }
+      },
+      "MediatR.Contracts/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.JsonPatch/6.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -611,25 +645,66 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Account.Mapper": "1.0.0",
+          "Account.PersistenceDatabase": "1.0.0",
           "Account.Query.Service": "1.0.0",
-          "AccountMapper": "1.0.0",
-          "AccountPersistenceDatabase": "1.0.0",
           "Client.Mapper": "1.0.0",
-          "Common.Repository": "1.0.0"
+          "Common.Repository": "1.0.0",
+          "MediatR": "10.0.1",
+          "Microsoft.AspNetCore.JsonPatch": "6.0.8"
         },
         "compile": {
           "bin/placeholder/Account.Command.Service.dll": {}
         },
         "runtime": {
           "bin/placeholder/Account.Command.Service.dll": {}
+        }
+      },
+      "Account.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Account.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Account.Domain.dll": {}
+        }
+      },
+      "Account.Mapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Account.Domain": "1.0.0",
+          "MediatR": "10.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Account.Mapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Account.Mapper.dll": {}
+        }
+      },
+      "Account.PersistenceDatabase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Account.Domain": "1.0.0",
+          "Common.Repository": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Account.PersistenceDatabase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Account.PersistenceDatabase.dll": {}
         }
       },
       "Account.Query.Service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "AccountMapper": "1.0.0",
-          "AccountPersistenceDatabase": "1.0.0"
+          "Account.Mapper": "1.0.0",
+          "Account.PersistenceDatabase": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Account.Query.Service.dll": {}
@@ -638,55 +713,42 @@
           "bin/placeholder/Account.Query.Service.dll": {}
         }
       },
-      "AccountDomain/1.0.0": {
+      "Client.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/AccountDomain.dll": {}
+          "bin/placeholder/Client.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AccountDomain.dll": {}
-        }
-      },
-      "AccountMapper/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "AccountDomain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/AccountMapper.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AccountMapper.dll": {}
-        }
-      },
-      "AccountPersistenceDatabase/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "AccountDomain": "1.0.0",
-          "Common.Repository": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
-        },
-        "compile": {
-          "bin/placeholder/AccountPersistenceDatabase.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AccountPersistenceDatabase.dll": {}
+          "bin/placeholder/Client.Domain.dll": {}
         }
       },
       "Client.Mapper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "ClientDomain": "1.0.0"
+          "Client.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Client.Mapper.dll": {}
         },
         "runtime": {
           "bin/placeholder/Client.Mapper.dll": {}
+        }
+      },
+      "Client.PersistenceDatabase.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Client.Domain": "1.0.0",
+          "Common.Repository": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Client.PersistenceDatabase.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Client.PersistenceDatabase.Contract.dll": {}
         }
       },
       "Client.Service.Queries/1.0.0": {
@@ -694,38 +756,13 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Client.Mapper": "1.0.0",
-          "ClientPersistenceDatabase.Contract": "1.0.0"
+          "Client.PersistenceDatabase.Contract": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Client.Service.Queries.dll": {}
         },
         "runtime": {
           "bin/placeholder/Client.Service.Queries.dll": {}
-        }
-      },
-      "ClientDomain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/ClientDomain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ClientDomain.dll": {}
-        }
-      },
-      "ClientPersistenceDatabase.Contract/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "ClientDomain": "1.0.0",
-          "Common.Repository": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
-        },
-        "compile": {
-          "bin/placeholder/ClientPersistenceDatabase.Contract.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ClientPersistenceDatabase.Contract.dll": {}
         }
       },
       "Common.Repository/1.0.0": {
@@ -745,10 +782,59 @@
     }
   },
   "libraries": {
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "MediatR/10.0.1": {
+      "sha512": "vnjbk4giDJzJelh34Ygt0eorApCKrRFB7j0pauFPY1oxfO3cEZ7FugBrIOjCM76SDGTOmPFfbfmVnz1t3iFrGA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "mediatr/10.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.10.0.1.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Contracts/1.0.1": {
+      "sha512": "NsRvOxthhkYml4DcBMyJsmym8C4MchioH7wxKVPEg7plFj9Euh/i4IcmZ3Gvgx6+K8obeuhPeJdoBl56wnuo3A==",
+      "type": "package",
+      "path": "mediatr.contracts/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net461/MediatR.Contracts.dll",
+        "lib/net461/MediatR.Contracts.xml",
+        "lib/netstandard2.0/MediatR.Contracts.dll",
+        "lib/netstandard2.0/MediatR.Contracts.xml",
+        "mediatr.contracts.1.0.1.nupkg.sha512",
+        "mediatr.contracts.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.JsonPatch/6.0.8": {
+      "sha512": "OihHbIG+WAxk0U3jwPxCgh2tQqpeODYis3D0SnwIshpkKoZFhifCwfDNcsTBoppx4Y6ic0dcxkGiHO5NZWtXiw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.jsonpatch/6.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net461/Microsoft.AspNetCore.JsonPatch.xml",
+        "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net6.0/Microsoft.AspNetCore.JsonPatch.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
+        "microsoft.aspnetcore.jsonpatch.6.0.8.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.nuspec"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -761,6 +847,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -770,7 +857,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -1939,45 +2026,45 @@
       "path": "../Account.Command.Service/Account.Command.Service.csproj",
       "msbuildProject": "../Account.Command.Service/Account.Command.Service.csproj"
     },
+    "Account.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AccountDomain/Account.Domain.csproj",
+      "msbuildProject": "../AccountDomain/Account.Domain.csproj"
+    },
+    "Account.Mapper/1.0.0": {
+      "type": "project",
+      "path": "../AccountMapper/Account.Mapper.csproj",
+      "msbuildProject": "../AccountMapper/Account.Mapper.csproj"
+    },
+    "Account.PersistenceDatabase/1.0.0": {
+      "type": "project",
+      "path": "../AccountPersistenceDatabase/Account.PersistenceDatabase.csproj",
+      "msbuildProject": "../AccountPersistenceDatabase/Account.PersistenceDatabase.csproj"
+    },
     "Account.Query.Service/1.0.0": {
       "type": "project",
       "path": "../Account.Query.Service/Account.Query.Service.csproj",
       "msbuildProject": "../Account.Query.Service/Account.Query.Service.csproj"
     },
-    "AccountDomain/1.0.0": {
+    "Client.Domain/1.0.0": {
       "type": "project",
-      "path": "../AccountDomain/AccountDomain.csproj",
-      "msbuildProject": "../AccountDomain/AccountDomain.csproj"
-    },
-    "AccountMapper/1.0.0": {
-      "type": "project",
-      "path": "../AccountMapper/AccountMapper.csproj",
-      "msbuildProject": "../AccountMapper/AccountMapper.csproj"
-    },
-    "AccountPersistenceDatabase/1.0.0": {
-      "type": "project",
-      "path": "../AccountPersistenceDatabase/AccountPersistenceDatabase.csproj",
-      "msbuildProject": "../AccountPersistenceDatabase/AccountPersistenceDatabase.csproj"
+      "path": "../../Client/ClientDomain/Client.Domain.csproj",
+      "msbuildProject": "../../Client/ClientDomain/Client.Domain.csproj"
     },
     "Client.Mapper/1.0.0": {
       "type": "project",
       "path": "../../Client/Client.Mapper/Client.Mapper.csproj",
       "msbuildProject": "../../Client/Client.Mapper/Client.Mapper.csproj"
     },
+    "Client.PersistenceDatabase.Contract/1.0.0": {
+      "type": "project",
+      "path": "../../Client/ClientPersistenceDatabase.Contract/Client.PersistenceDatabase.Contract.csproj",
+      "msbuildProject": "../../Client/ClientPersistenceDatabase.Contract/Client.PersistenceDatabase.Contract.csproj"
+    },
     "Client.Service.Queries/1.0.0": {
       "type": "project",
       "path": "../../Client/Client.Service.Queries/Client.Service.Queries.csproj",
       "msbuildProject": "../../Client/Client.Service.Queries/Client.Service.Queries.csproj"
-    },
-    "ClientDomain/1.0.0": {
-      "type": "project",
-      "path": "../../Client/ClientDomain/ClientDomain.csproj",
-      "msbuildProject": "../../Client/ClientDomain/ClientDomain.csproj"
-    },
-    "ClientPersistenceDatabase.Contract/1.0.0": {
-      "type": "project",
-      "path": "../../Client/ClientPersistenceDatabase.Contract/ClientPersistenceDatabase.Contract.csproj",
-      "msbuildProject": "../../Client/ClientPersistenceDatabase.Contract/ClientPersistenceDatabase.Contract.csproj"
     },
     "Common.Repository/1.0.0": {
       "type": "project",
@@ -1988,8 +2075,8 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Account.Command.Service >= 1.0.0",
+      "Account.PersistenceDatabase >= 1.0.0",
       "Account.Query.Service >= 1.0.0",
-      "AccountPersistenceDatabase >= 1.0.0",
       "Client.Service.Queries >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0"
     ]
@@ -2000,9 +2087,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\DependencyResolver\\DependencyResolverAccount.csproj",
-      "projectName": "DependencyResolverAccount",
-      "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\DependencyResolver\\DependencyResolverAccount.csproj",
+      "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\DependencyResolver\\Account.DependencyResolver.csproj",
+      "projectName": "Account.DependencyResolver",
+      "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\DependencyResolver\\Account.DependencyResolver.csproj",
       "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
       "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\DependencyResolver\\obj\\",
       "projectStyle": "PackageReference",
@@ -2027,8 +2114,8 @@
             "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Query.Service\\Account.Query.Service.csproj": {
               "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Query.Service\\Account.Query.Service.csproj"
             },
-            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj": {
-              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj"
+            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\Account.PersistenceDatabase.csproj": {
+              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\Account.PersistenceDatabase.csproj"
             },
             "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Service.Queries\\Client.Service.Queries.csproj": {
               "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Service.Queries\\Client.Service.Queries.csproj"

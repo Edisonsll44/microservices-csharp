@@ -1,16 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MovementDomain;
+using me = MovementDomain;
 using MovementPersistenceDatabase.Configuration;
 
 namespace MovementPersistenceDatabase
 {
-    public class ApplicationMovementDbContext : DbContext
+    public class ApplicationMovementDbContext : DbContext, IApplicationMovementDbContext
     {
         public ApplicationMovementDbContext(DbContextOptions<ApplicationMovementDbContext> option) : base(option)
         {
 
         }
-        public DbSet<Movement> Movements { get; set; }
+        public DbSet<me.Movement> Movements { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
 
@@ -22,7 +22,7 @@ namespace MovementPersistenceDatabase
 
         private void ModelConfig(ModelBuilder modelBuilder)
         {
-            new MovementConfiguration(modelBuilder.Entity<Movement>());
+            new MovementConfiguration(modelBuilder.Entity<MovementDomain.Movement>());
         }
     }
 }

@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "MbOojTJBvqx/5Vrwv+0Y8zl9RwBJQtX0KEsZLXWiBR10p1n+KAuXm+Pj+Lf73dnw+8sBjeABKYsH1a6nj1QAQw==",
+  "dgSpecHash": "NLXPvjeiIXbG7PTYim4jrxqe3RqaB7vWWvFbWscHYb6p5veVNpWCt7iPaMKpA+lLQ2zL6tmbGmEi1bWaKyMcdw==",
   "success": true,
-  "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\DependencyResolver\\DependencyResolverAccount.csproj",
+  "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\DependencyResolver\\Account.DependencyResolver.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\edison.sanchez\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\edison.sanchez\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.8\\microsoft.aspnetcore.jsonpatch.6.0.8.nupkg.sha512",
+    "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.8\\microsoft.entityframeworkcore.6.0.8.nupkg.sha512",

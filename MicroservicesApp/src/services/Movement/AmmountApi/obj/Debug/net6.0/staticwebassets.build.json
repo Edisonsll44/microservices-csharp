@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "CkmTCmX1RRrkhNvASPLAGNVyACW7ID9VbvQW1c6thUw=",
-  "Source": "AmmountApi",
-  "BasePath": "_content/AmmountApi",
+  "Hash": "9yv1yFMZMt6PtOpgwEZkWNo1PAzkdEBFLC7XyM/tGns=",
+  "Source": "Movement.Api",
+  "BasePath": "_content/Movement.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MovementDomain;
+using me = MovementDomain;
 
 namespace MovementPersistenceDatabase.Configuration
 {
     public class MovementConfiguration
     {
-        public MovementConfiguration(EntityTypeBuilder<Movement> entityBuilder)
+        public MovementConfiguration(EntityTypeBuilder<me.Movement> entityBuilder)
         {
-            var movements = new List<Movement>();
-            var movement = new Movement
+            var movements = new List<me.Movement>();
+            var movement = new me.Movement
             {
                 Balance = 2000,
                 MovementDate = DateTime.Now,

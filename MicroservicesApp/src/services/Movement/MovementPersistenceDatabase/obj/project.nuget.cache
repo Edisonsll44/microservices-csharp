@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wAD/AtoEl36YODKzLJos9HfaPW3J1ijDT+oL2Or72x/7Ot0SRUddF7uqCP7Z9FAB5ogGdU9ot8udHHxLLbzpHw==",
+  "dgSpecHash": "2yUYL+6s0Wi1KcaXP0ZELMI7g+EdtO7LzxYHbWUdZ6V2X9XXU1MxTjxIcgyJOYhX+ZXxGVDXThOef1ScS5WtTA==",
   "success": true,
-  "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\MovementPersistenceDatabase\\MovementPersistenceDatabase.csproj",
+  "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\MovementPersistenceDatabase\\Movement.PersistenceDatabase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -33,6 +33,7 @@
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\edison.sanchez\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

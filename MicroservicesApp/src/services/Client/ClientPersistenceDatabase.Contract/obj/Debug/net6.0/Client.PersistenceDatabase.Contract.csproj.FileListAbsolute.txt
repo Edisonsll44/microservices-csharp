@@ -1,0 +1,17 @@
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\bin\Debug\net6.0\Client.PersistenceDatabase.Contract.deps.json
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\bin\Debug\net6.0\Client.PersistenceDatabase.Contract.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\bin\Debug\net6.0\Client.PersistenceDatabase.Contract.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\bin\Debug\net6.0\Client.Domain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\bin\Debug\net6.0\Common.Repository.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\bin\Debug\net6.0\Common.Repository.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\bin\Debug\net6.0\Client.Domain.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\obj\Debug\net6.0\Client.PersistenceDatabase.Contract.csproj.AssemblyReference.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\obj\Debug\net6.0\Client.PersistenceDatabase.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\obj\Debug\net6.0\Client.PersistenceDatabase.Contract.AssemblyInfoInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\obj\Debug\net6.0\Client.PersistenceDatabase.Contract.AssemblyInfo.cs
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\obj\Debug\net6.0\Client.PersistenceDatabase.Contract.csproj.CoreCompileInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\obj\Debug\net6.0\Client.PersistenceDatabase.Contract.csproj.CopyComplete
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\obj\Debug\net6.0\Client.PersistenceDatabase.Contract.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\obj\Debug\net6.0\refint\Client.PersistenceDatabase.Contract.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\obj\Debug\net6.0\Client.PersistenceDatabase.Contract.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientPersistenceDatabase.Contract\obj\Debug\net6.0\ref\Client.PersistenceDatabase.Contract.dll

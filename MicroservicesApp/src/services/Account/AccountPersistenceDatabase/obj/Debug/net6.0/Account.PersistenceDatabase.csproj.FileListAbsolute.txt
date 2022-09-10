@@ -1,0 +1,17 @@
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\bin\Debug\net6.0\Account.PersistenceDatabase.deps.json
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\bin\Debug\net6.0\Account.PersistenceDatabase.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\bin\Debug\net6.0\Account.PersistenceDatabase.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\bin\Debug\net6.0\Account.Domain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\bin\Debug\net6.0\Common.Repository.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\bin\Debug\net6.0\Common.Repository.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\bin\Debug\net6.0\Account.Domain.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\obj\Debug\net6.0\Account.PersistenceDatabase.csproj.AssemblyReference.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\obj\Debug\net6.0\Account.PersistenceDatabase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\obj\Debug\net6.0\Account.PersistenceDatabase.AssemblyInfoInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\obj\Debug\net6.0\Account.PersistenceDatabase.AssemblyInfo.cs
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\obj\Debug\net6.0\Account.PersistenceDatabase.csproj.CoreCompileInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\obj\Debug\net6.0\Account.PersistenceDatabase.csproj.CopyComplete
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\obj\Debug\net6.0\Account.PersistenceDatabase.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\obj\Debug\net6.0\refint\Account.PersistenceDatabase.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\obj\Debug\net6.0\Account.PersistenceDatabase.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountPersistenceDatabase\obj\Debug\net6.0\ref\Account.PersistenceDatabase.dll

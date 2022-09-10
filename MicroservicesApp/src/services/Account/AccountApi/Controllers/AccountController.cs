@@ -1,7 +1,8 @@
-﻿using Account.Command.Service;
+﻿using Account.Command.Service.Handlers;
 using Account.Query.Service;
 using AccountMapper.Dto;
-using Microsoft.AspNetCore.Http;
+using MediatR;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AccountApi.Controllers
@@ -13,11 +14,13 @@ namespace AccountApi.Controllers
     {
         private readonly IAccountQueryService _accountQueryService;
         private readonly IAccountCommandService _accountCommandService;
+        private readonly IMediator _mediator;
         private readonly ILogger<AccountController> _logger;
 
-        public AccountController(IAccountQueryService accountQueryService, IAccountCommandService accountCommandService, ILogger<AccountController> logger)
+        public AccountController(IAccountQueryService accountQueryService, IAccountCommandService accountCommandService, ILogger<AccountController> logger, IMediator mediator)
         {
-            _accountCommandService = accountCommandService;
+            //_accountCommandService = accountCommandService;
+            _mediator = mediator;
             _accountQueryService = accountQueryService;
             _logger = logger;
         }
@@ -53,11 +56,11 @@ namespace AccountApi.Controllers
 
         [HttpPost]
         [Route("NewAccount")]
-        public async Task<IActionResult> NewAccount(AccountDto dto)
+        public async Task<IActionResult> NewAccount(CommandCreateAccountDto dto)
         {
             try
             {
-                await _accountCommandService.CreateAccount(dto);
+                await _mediator.Publish(dto);
                 return Ok();
             }
             catch (Exception e)
@@ -69,11 +72,11 @@ namespace AccountApi.Controllers
 
         [HttpPut]
         [Route("PutAccount")]
-        public async Task<IActionResult> PutAccount(AccountDto dto)
+        public async Task<IActionResult> PutAccount(CommandUpdateAccountDto dto)
         {
             try
             {
-                await _accountCommandService.UpdateAccount(dto);
+                await _mediator.Publish(dto);
                 return Ok();
             }
             catch (Exception e)
@@ -83,22 +86,22 @@ namespace AccountApi.Controllers
             }
         }
 
-        //[HttpPatch]
-        //[Route("PatchClient")]
-        //public async Task<IActionResult> PatchClient(int id, [FromBody] JsonPatchDocument<ClientDto> dto)
-        //{
-        //    try
-        //    {
-        //        var f = dto;
-        //        await _clientQueryService.UpdateClient(id, null);
-        //        return Ok();
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        _logger.LogError(e.Message);
-        //        throw new Exception(e.Message);
-        //    }
-        //}
+        [HttpPatch]
+        [Route("PatchClient")]
+        public async Task<IActionResult> PatchClient(int id, [FromBody] JsonPatchDocument dto)
+        {
+            try
+            {
+                var f = dto;
+                await _accountCommandService.UpdateClient(id, dto);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw new Exception(e.Message);
+            }
+        }
 
         [HttpDelete]
         [Route("DeleteAccount")]

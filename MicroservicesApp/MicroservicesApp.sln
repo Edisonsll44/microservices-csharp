@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Account", "03. Account"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Movements", "04. Movements", "{3C75D6C2-736D-40E4-9CA4-11A0C4458E90}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientApp", "src\services\Client\ClientApp\ClientApp.csproj", "{26AAD93F-CE42-4D8A-85E1-81012543B1CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client.Api", "src\services\Client\ClientApp\Client.Api.csproj", "{26AAD93F-CE42-4D8A-85E1-81012543B1CB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Api", "01. Api", "{48F1A055-4C2D-4EC1-BD77-CED084A68A79}"
 EndProject
@@ -27,9 +27,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Persistence", "03. Pers
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Models", "04. Models", "{42CA418F-63F5-4939-BB00-C49140D292EA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientDomain", "src\services\Client\ClientDomain\ClientDomain.csproj", "{0D74DA8B-E30A-45D3-9A84-BEF7805E88E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client.Domain", "src\services\Client\ClientDomain\Client.Domain.csproj", "{0D74DA8B-E30A-45D3-9A84-BEF7805E88E6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientPersistenceDatabase", "src\services\Client\ClientPersistenceDatabase\ClientPersistenceDatabase.csproj", "{7DA31BE9-4B16-4656-B6B8-3F5AAE18F448}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client.PersistenceDatabase", "src\services\Client\ClientPersistenceDatabase\Client.PersistenceDatabase.csproj", "{7DA31BE9-4B16-4656-B6B8-3F5AAE18F448}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Api", "01.Api", "{64D340EB-975A-44EB-B5DB-60AFA2298EEF}"
 EndProject
@@ -47,17 +47,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Persistence", "03.Persis
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Model", "04.Model", "{505DFA22-8B8A-49D2-A1C5-C43B94F6EAE5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountDomain", "src\services\Account\AccountDomain\AccountDomain.csproj", "{5C97E886-0D7C-477B-AE43-D468F2BB6141}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.Domain", "src\services\Account\AccountDomain\Account.Domain.csproj", "{5C97E886-0D7C-477B-AE43-D468F2BB6141}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovementDomain", "src\services\Movement\MovementDomain\MovementDomain.csproj", "{B89CDACD-DC67-4456-8DAC-2E7FC7C3D8FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movement.Domain", "src\services\Movement\MovementDomain\Movement.Domain.csproj", "{B89CDACD-DC67-4456-8DAC-2E7FC7C3D8FC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountApi", "src\services\Account\AccountApi\AccountApi.csproj", "{EF1336EA-2A89-45B6-8325-743397D56A41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.Api", "src\services\Account\AccountApi\Account.Api.csproj", "{EF1336EA-2A89-45B6-8325-743397D56A41}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountPersistenceDatabase", "src\services\Account\AccountPersistenceDatabase\AccountPersistenceDatabase.csproj", "{DACA8102-923C-4792-9F8A-23256690603F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.PersistenceDatabase", "src\services\Account\AccountPersistenceDatabase\Account.PersistenceDatabase.csproj", "{DACA8102-923C-4792-9F8A-23256690603F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovementPersistenceDatabase", "src\services\Movement\MovementPersistenceDatabase\MovementPersistenceDatabase.csproj", "{28A732F9-8CA5-4033-A5A8-4DF1E4805FCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movement.PersistenceDatabase", "src\services\Movement\MovementPersistenceDatabase\Movement.PersistenceDatabase.csproj", "{28A732F9-8CA5-4033-A5A8-4DF1E4805FCC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmmountApi", "src\services\Movement\AmmountApi\AmmountApi.csproj", "{5C0A717B-3B43-4C82-9F54-8DC62EA4AF86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movement.Api", "src\services\Movement\AmmountApi\Movement.Api.csproj", "{5C0A717B-3B43-4C82-9F54-8DC62EA4AF86}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client.Service.Queries", "src\services\Client\Client.Service.Queries\Client.Service.Queries.csproj", "{E735EB69-950E-423F-9E46-826722C8BD3F}"
 EndProject
@@ -67,11 +67,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Repository", "01.Reposit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Repository", "src\services\Common\Common.Repository\Common.Repository.csproj", "{DB12D579-6031-4584-8691-9342CD774114}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientPersistenceDatabase.Contract", "src\services\Client\ClientPersistenceDatabase.Contract\ClientPersistenceDatabase.Contract.csproj", "{74EB9E8B-4E46-4AB7-A380-F4DE377D8F88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client.PersistenceDatabase.Contract", "src\services\Client\ClientPersistenceDatabase.Contract\Client.PersistenceDatabase.Contract.csproj", "{74EB9E8B-4E46-4AB7-A380-F4DE377D8F88}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.DependencyResolver", "05.DependencyResolver", "{B31A7979-66BF-406C-8045-E7A995BE8E63}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyResolverClient", "src\services\Common\ClassLibrary1\DependencyResolverClient.csproj", "{996A524D-B0FC-44F0-A552-2DFAD461057C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client.DependencyResolver", "src\services\Common\ClassLibrary1\Client.DependencyResolver.csproj", "{996A524D-B0FC-44F0-A552-2DFAD461057C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06.Mappers", "06.Mappers", "{5546502D-C556-4DA4-A5DC-D28B3C015F9B}"
 EndProject
@@ -81,13 +81,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.DependencyResolver", "05
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06.Mappers", "06.Mappers", "{578DAEFB-C63A-4082-B4F0-EC45D8CE30FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountMapper", "src\services\Account\AccountMapper\AccountMapper.csproj", "{49143FA6-FC3C-4209-BD57-2C773D016AD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.Mapper", "src\services\Account\AccountMapper\Account.Mapper.csproj", "{49143FA6-FC3C-4209-BD57-2C773D016AD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyResolverAccount", "src\services\Account\DependencyResolver\DependencyResolverAccount.csproj", "{7466B82A-B23F-4A97-A437-39ED1AC64B1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.DependencyResolver", "src\services\Account\DependencyResolver\Account.DependencyResolver.csproj", "{7466B82A-B23F-4A97-A437-39ED1AC64B1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Query.Service", "src\services\Account\Account.Query.Service\Account.Query.Service.csproj", "{E3593B13-96D1-4285-A2E6-E79B41E526BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.Query.Service", "src\services\Account\Account.Query.Service\Account.Query.Service.csproj", "{E3593B13-96D1-4285-A2E6-E79B41E526BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Command.Service", "src\services\Account\Account.Command.Service\Account.Command.Service.csproj", "{2F43402B-58B1-4EDD-9C96-23A0706AA139}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.Command.Service", "src\services\Account\Account.Command.Service\Account.Command.Service.csproj", "{2F43402B-58B1-4EDD-9C96-23A0706AA139}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.DependencyResolver", "05.DependencyResolver", "{5088E61B-6EED-406B-9864-04512BADA771}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06.Mapper", "06.Mapper", "{C269287E-B126-48C8-9463-D7AB6321E39F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movement.Query.Service", "src\services\Movement\Movement.Query.Service\Movement.Query.Service.csproj", "{553F99F8-FB7A-4E53-B40F-14803A1C1180}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movement.Command.Service", "src\services\Movement\Movement.Common.Service\Movement.Command.Service.csproj", "{D56F83C2-A952-48BD-ACC8-E154C98DE4DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movement.Mapper", "src\services\Movement\Movement.Mapper\Movement.Mapper.csproj", "{3D08CAC8-E079-4E02-AA77-C6249501681C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movement.DependencyResolver", "src\services\Movement\Movement.DependencyResolver\Movement.DependencyResolver.csproj", "{54F78D34-661B-4F5C-B687-7AA36360C5F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -167,6 +179,22 @@ Global
 		{2F43402B-58B1-4EDD-9C96-23A0706AA139}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F43402B-58B1-4EDD-9C96-23A0706AA139}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F43402B-58B1-4EDD-9C96-23A0706AA139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{553F99F8-FB7A-4E53-B40F-14803A1C1180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553F99F8-FB7A-4E53-B40F-14803A1C1180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553F99F8-FB7A-4E53-B40F-14803A1C1180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{553F99F8-FB7A-4E53-B40F-14803A1C1180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D56F83C2-A952-48BD-ACC8-E154C98DE4DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56F83C2-A952-48BD-ACC8-E154C98DE4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56F83C2-A952-48BD-ACC8-E154C98DE4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56F83C2-A952-48BD-ACC8-E154C98DE4DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D08CAC8-E079-4E02-AA77-C6249501681C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D08CAC8-E079-4E02-AA77-C6249501681C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D08CAC8-E079-4E02-AA77-C6249501681C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D08CAC8-E079-4E02-AA77-C6249501681C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54F78D34-661B-4F5C-B687-7AA36360C5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54F78D34-661B-4F5C-B687-7AA36360C5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54F78D34-661B-4F5C-B687-7AA36360C5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54F78D34-661B-4F5C-B687-7AA36360C5F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -212,6 +240,12 @@ Global
 		{7466B82A-B23F-4A97-A437-39ED1AC64B1C} = {A25E1CF3-7BF4-4771-926C-6363FD6F47DD}
 		{E3593B13-96D1-4285-A2E6-E79B41E526BC} = {2F164B08-21AE-410D-A124-821FBF84F19F}
 		{2F43402B-58B1-4EDD-9C96-23A0706AA139} = {2F164B08-21AE-410D-A124-821FBF84F19F}
+		{5088E61B-6EED-406B-9864-04512BADA771} = {3C75D6C2-736D-40E4-9CA4-11A0C4458E90}
+		{C269287E-B126-48C8-9463-D7AB6321E39F} = {3C75D6C2-736D-40E4-9CA4-11A0C4458E90}
+		{553F99F8-FB7A-4E53-B40F-14803A1C1180} = {979DEAED-657E-4E02-8A20-01A42CF44DAB}
+		{D56F83C2-A952-48BD-ACC8-E154C98DE4DF} = {979DEAED-657E-4E02-8A20-01A42CF44DAB}
+		{3D08CAC8-E079-4E02-AA77-C6249501681C} = {C269287E-B126-48C8-9463-D7AB6321E39F}
+		{54F78D34-661B-4F5C-B687-7AA36360C5F4} = {5088E61B-6EED-406B-9864-04512BADA771}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {13E456AF-EE51-44E6-A0E4-7440DA1F4726}

@@ -1,0 +1,12 @@
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.Common.Service\bin\Debug\net6.0\Movement.Common.Service.deps.json
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.Common.Service\bin\Debug\net6.0\Movement.Common.Service.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.Common.Service\bin\Debug\net6.0\Movement.Common.Service.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.Common.Service\obj\Debug\net6.0\Movement.Common.Service.csproj.AssemblyReference.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.Common.Service\obj\Debug\net6.0\Movement.Common.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.Common.Service\obj\Debug\net6.0\Movement.Common.Service.AssemblyInfoInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.Common.Service\obj\Debug\net6.0\Movement.Common.Service.AssemblyInfo.cs
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.Common.Service\obj\Debug\net6.0\Movement.Common.Service.csproj.CoreCompileInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.Common.Service\obj\Debug\net6.0\Movement.Common.Service.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.Common.Service\obj\Debug\net6.0\refint\Movement.Common.Service.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.Common.Service\obj\Debug\net6.0\Movement.Common.Service.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.Common.Service\obj\Debug\net6.0\ref\Movement.Common.Service.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hBAXsSVjkE5IgJTR+o36HiNx7mad0jKH2E2YTor+noYejnep40jOTD8JuqsEebM7QFalAPBoXYasnqEUaf3skQ==",
+  "dgSpecHash": "zqQ2JkGy9fI8H4XxcT1mjlk2xNcKipEI5h+5QZ5F5HH9R9zV76JFlWtutBhq+08a1vuZPIVqi002tHgfLVg0tg==",
   "success": true,
-  "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\ClientPersistenceDatabase.Contract.csproj",
+  "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase.Contract\\Client.PersistenceDatabase.Contract.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

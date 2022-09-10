@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\ClientDomain.csproj",
-      "projectName": "ClientDomain",
-      "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\ClientDomain.csproj",
+      "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\Client.Domain.csproj",
+      "projectName": "Client.Domain",
+      "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\Client.Domain.csproj",
       "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
       "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\obj\\",
       "projectStyle": "PackageReference",

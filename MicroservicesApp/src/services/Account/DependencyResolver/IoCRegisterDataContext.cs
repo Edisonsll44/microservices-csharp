@@ -10,7 +10,7 @@ namespace Account.DependencyResolver
         {
             services.AddScoped<IApplicationAccountDbContext, ApplicationAccountDbContext>();
             services.AddDbContext<ApplicationAccountDbContext>(option => option.UseSqlServer(connectionString,
-                    x => x.MigrationsHistoryTable("__EFMigrationHystory", "client")));
+                    x => x.MigrationsHistoryTable("__EFMigrationHystory", "account")));
             return services;
         }
     }

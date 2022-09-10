@@ -10,12 +10,12 @@ C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Serv
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\obj\Debug\net6.0\refint\Client.Service.Queries.dll
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\obj\Debug\net6.0\Client.Service.Queries.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\obj\Debug\net6.0\ref\Client.Service.Queries.dll
-C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\ClientDomain.dll
-C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\ClientPersistenceDatabase.Contract.dll
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\Common.Repository.dll
-C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\ClientPersistenceDatabase.Contract.pdb
-C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\ClientDomain.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\Common.Repository.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\obj\Debug\net6.0\Client.Service.Queries.csproj.CopyComplete
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\Client.Mapper.dll
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\Client.Mapper.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\Client.Domain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\Client.PersistenceDatabase.Contract.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\Client.PersistenceDatabase.Contract.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\Client.Service.Queries\bin\Debug\net6.0\Client.Domain.pdb

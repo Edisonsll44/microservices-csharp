@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Movement.Mapper/1.0.0": {
+        "dependencies": {
+          "Movement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Movement.Mapper.dll": {}
+        }
+      },
+      "Movement.Domain/1.0.0": {
+        "runtime": {
+          "Movement.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Movement.Mapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Movement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

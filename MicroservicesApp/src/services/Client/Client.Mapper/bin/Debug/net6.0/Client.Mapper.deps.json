@@ -8,15 +8,15 @@
     ".NETCoreApp,Version=v6.0": {
       "Client.Mapper/1.0.0": {
         "dependencies": {
-          "ClientDomain": "1.0.0"
+          "Client.Domain": "1.0.0"
         },
         "runtime": {
           "Client.Mapper.dll": {}
         }
       },
-      "ClientDomain/1.0.0": {
+      "Client.Domain/1.0.0": {
         "runtime": {
-          "ClientDomain.dll": {}
+          "Client.Domain.dll": {}
         }
       }
     }
@@ -27,7 +27,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ClientDomain/1.0.0": {
+    "Client.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

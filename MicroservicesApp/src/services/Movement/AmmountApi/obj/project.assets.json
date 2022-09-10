@@ -11,7 +11,41 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "MediatR/10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MediatR.Contracts": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        }
+      },
+      "MediatR.Contracts/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.JsonPatch/6.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -429,6 +463,15 @@
           }
         }
       },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "type": "package",
         "dependencies": {
@@ -706,28 +749,158 @@
           }
         }
       },
-      "MovementDomain/1.0.0": {
+      "Account.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/MovementDomain.dll": {}
+          "bin/placeholder/Account.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MovementDomain.dll": {}
+          "bin/placeholder/Account.Domain.dll": {}
         }
       },
-      "MovementPersistenceDatabase/1.0.0": {
+      "Account.Mapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Account.Domain": "1.0.0",
+          "MediatR": "10.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Account.Mapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Account.Mapper.dll": {}
+        }
+      },
+      "Account.PersistenceDatabase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Account.Domain": "1.0.0",
+          "Common.Repository": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Account.PersistenceDatabase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Account.PersistenceDatabase.dll": {}
+        }
+      },
+      "Account.Query.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Account.Mapper": "1.0.0",
+          "Account.PersistenceDatabase": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Account.Query.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Account.Query.Service.dll": {}
+        }
+      },
+      "Common.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
-          "MovementDomain": "1.0.0"
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "bin/placeholder/MovementPersistenceDatabase.dll": {}
+          "bin/placeholder/Common.Repository.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MovementPersistenceDatabase.dll": {}
+          "bin/placeholder/Common.Repository.dll": {}
+        }
+      },
+      "Movement.Command.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Common.Repository": "1.0.0",
+          "Microsoft.AspNetCore.JsonPatch": "6.0.8",
+          "Movement.Mapper": "1.0.0",
+          "Movement.PersistenceDatabase": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Movement.Command.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Movement.Command.Service.dll": {}
+        }
+      },
+      "Movement.DependencyResolver/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Account.PersistenceDatabase": "1.0.0",
+          "Account.Query.Service": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Movement.Command.Service": "1.0.0",
+          "Movement.PersistenceDatabase": "1.0.0",
+          "Movement.Query.Service": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Movement.DependencyResolver.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Movement.DependencyResolver.dll": {}
+        }
+      },
+      "Movement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Movement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Movement.Domain.dll": {}
+        }
+      },
+      "Movement.Mapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Movement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Movement.Mapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Movement.Mapper.dll": {}
+        }
+      },
+      "Movement.PersistenceDatabase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Common.Repository": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
+          "Movement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Movement.PersistenceDatabase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Movement.PersistenceDatabase.dll": {}
+        }
+      },
+      "Movement.Query.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Movement.Domain": "1.0.0",
+          "Movement.Mapper": "1.0.0",
+          "Movement.PersistenceDatabase": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Movement.Query.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Movement.Query.Service.dll": {}
         }
       }
     }
@@ -749,10 +922,59 @@
         "logo.png"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "MediatR/10.0.1": {
+      "sha512": "vnjbk4giDJzJelh34Ygt0eorApCKrRFB7j0pauFPY1oxfO3cEZ7FugBrIOjCM76SDGTOmPFfbfmVnz1t3iFrGA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "mediatr/10.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.10.0.1.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Contracts/1.0.1": {
+      "sha512": "NsRvOxthhkYml4DcBMyJsmym8C4MchioH7wxKVPEg7plFj9Euh/i4IcmZ3Gvgx6+K8obeuhPeJdoBl56wnuo3A==",
+      "type": "package",
+      "path": "mediatr.contracts/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net461/MediatR.Contracts.dll",
+        "lib/net461/MediatR.Contracts.xml",
+        "lib/netstandard2.0/MediatR.Contracts.dll",
+        "lib/netstandard2.0/MediatR.Contracts.xml",
+        "mediatr.contracts.1.0.1.nupkg.sha512",
+        "mediatr.contracts.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.JsonPatch/6.0.8": {
+      "sha512": "OihHbIG+WAxk0U3jwPxCgh2tQqpeODYis3D0SnwIshpkKoZFhifCwfDNcsTBoppx4Y6ic0dcxkGiHO5NZWtXiw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.jsonpatch/6.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net461/Microsoft.AspNetCore.JsonPatch.xml",
+        "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net6.0/Microsoft.AspNetCore.JsonPatch.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
+        "microsoft.aspnetcore.jsonpatch.6.0.8.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.nuspec"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -765,6 +987,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -774,7 +997,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -1511,6 +1734,33 @@
         "version.txt"
       ]
     },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.2.3": {
       "sha512": "cnzQDn0Le+hInsw2SYwlOhOCPXpYi/szcvnyqZJ12v+QyrLBwAmWXBg6RIyHB18s/mLeywC+Rg2O9ndz0IUNYQ==",
       "type": "package",
@@ -2076,21 +2326,67 @@
         "version.txt"
       ]
     },
-    "MovementDomain/1.0.0": {
+    "Account.Domain/1.0.0": {
       "type": "project",
-      "path": "../MovementDomain/MovementDomain.csproj",
-      "msbuildProject": "../MovementDomain/MovementDomain.csproj"
+      "path": "../../Account/AccountDomain/Account.Domain.csproj",
+      "msbuildProject": "../../Account/AccountDomain/Account.Domain.csproj"
     },
-    "MovementPersistenceDatabase/1.0.0": {
+    "Account.Mapper/1.0.0": {
       "type": "project",
-      "path": "../MovementPersistenceDatabase/MovementPersistenceDatabase.csproj",
-      "msbuildProject": "../MovementPersistenceDatabase/MovementPersistenceDatabase.csproj"
+      "path": "../../Account/AccountMapper/Account.Mapper.csproj",
+      "msbuildProject": "../../Account/AccountMapper/Account.Mapper.csproj"
+    },
+    "Account.PersistenceDatabase/1.0.0": {
+      "type": "project",
+      "path": "../../Account/AccountPersistenceDatabase/Account.PersistenceDatabase.csproj",
+      "msbuildProject": "../../Account/AccountPersistenceDatabase/Account.PersistenceDatabase.csproj"
+    },
+    "Account.Query.Service/1.0.0": {
+      "type": "project",
+      "path": "../../Account/Account.Query.Service/Account.Query.Service.csproj",
+      "msbuildProject": "../../Account/Account.Query.Service/Account.Query.Service.csproj"
+    },
+    "Common.Repository/1.0.0": {
+      "type": "project",
+      "path": "../../Common/Common.Repository/Common.Repository.csproj",
+      "msbuildProject": "../../Common/Common.Repository/Common.Repository.csproj"
+    },
+    "Movement.Command.Service/1.0.0": {
+      "type": "project",
+      "path": "../Movement.Common.Service/Movement.Command.Service.csproj",
+      "msbuildProject": "../Movement.Common.Service/Movement.Command.Service.csproj"
+    },
+    "Movement.DependencyResolver/1.0.0": {
+      "type": "project",
+      "path": "../Movement.DependencyResolver/Movement.DependencyResolver.csproj",
+      "msbuildProject": "../Movement.DependencyResolver/Movement.DependencyResolver.csproj"
+    },
+    "Movement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MovementDomain/Movement.Domain.csproj",
+      "msbuildProject": "../MovementDomain/Movement.Domain.csproj"
+    },
+    "Movement.Mapper/1.0.0": {
+      "type": "project",
+      "path": "../Movement.Mapper/Movement.Mapper.csproj",
+      "msbuildProject": "../Movement.Mapper/Movement.Mapper.csproj"
+    },
+    "Movement.PersistenceDatabase/1.0.0": {
+      "type": "project",
+      "path": "../MovementPersistenceDatabase/Movement.PersistenceDatabase.csproj",
+      "msbuildProject": "../MovementPersistenceDatabase/Movement.PersistenceDatabase.csproj"
+    },
+    "Movement.Query.Service/1.0.0": {
+      "type": "project",
+      "path": "../Movement.Query.Service/Movement.Query.Service.csproj",
+      "msbuildProject": "../Movement.Query.Service/Movement.Query.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.8",
-      "MovementPersistenceDatabase >= 1.0.0",
+      "Movement.DependencyResolver >= 1.0.0",
+      "Movement.PersistenceDatabase >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -2100,9 +2396,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\AmmountApi\\AmmountApi.csproj",
-      "projectName": "AmmountApi",
-      "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\AmmountApi\\AmmountApi.csproj",
+      "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\AmmountApi\\Movement.Api.csproj",
+      "projectName": "Movement.Api",
+      "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\AmmountApi\\Movement.Api.csproj",
       "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
       "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\AmmountApi\\obj\\",
       "projectStyle": "PackageReference",
@@ -2121,8 +2417,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\MovementPersistenceDatabase\\MovementPersistenceDatabase.csproj": {
-              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\MovementPersistenceDatabase\\MovementPersistenceDatabase.csproj"
+            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\Movement.DependencyResolver\\Movement.DependencyResolver.csproj": {
+              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\Movement.DependencyResolver\\Movement.DependencyResolver.csproj"
+            },
+            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\MovementPersistenceDatabase\\Movement.PersistenceDatabase.csproj": {
+              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\MovementPersistenceDatabase\\Movement.PersistenceDatabase.csproj"
             }
           }
         }

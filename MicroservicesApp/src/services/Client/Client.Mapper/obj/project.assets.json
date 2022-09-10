@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "ClientDomain/1.0.0": {
+      "Client.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/ClientDomain.dll": {}
+          "bin/placeholder/Client.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ClientDomain.dll": {}
+          "bin/placeholder/Client.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "ClientDomain/1.0.0": {
+    "Client.Domain/1.0.0": {
       "type": "project",
-      "path": "../ClientDomain/ClientDomain.csproj",
-      "msbuildProject": "../ClientDomain/ClientDomain.csproj"
+      "path": "../ClientDomain/Client.Domain.csproj",
+      "msbuildProject": "../ClientDomain/Client.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ClientDomain >= 1.0.0"
+      "Client.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -53,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\ClientDomain.csproj": {
-              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\ClientDomain.csproj"
+            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\Client.Domain.csproj": {
+              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientDomain\\Client.Domain.csproj"
             }
           }
         }

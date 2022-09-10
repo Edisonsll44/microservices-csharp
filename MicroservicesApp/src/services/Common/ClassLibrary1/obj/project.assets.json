@@ -607,17 +607,57 @@
           }
         }
       },
+      "Client.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Client.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Client.Domain.dll": {}
+        }
+      },
       "Client.Mapper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "ClientDomain": "1.0.0"
+          "Client.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Client.Mapper.dll": {}
         },
         "runtime": {
           "bin/placeholder/Client.Mapper.dll": {}
+        }
+      },
+      "Client.PersistenceDatabase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Client.Domain": "1.0.0",
+          "Client.PersistenceDatabase.Contract": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Client.PersistenceDatabase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Client.PersistenceDatabase.dll": {}
+        }
+      },
+      "Client.PersistenceDatabase.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Client.Domain": "1.0.0",
+          "Common.Repository": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Client.PersistenceDatabase.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Client.PersistenceDatabase.Contract.dll": {}
         }
       },
       "Client.Service.Queries/1.0.0": {
@@ -625,53 +665,13 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Client.Mapper": "1.0.0",
-          "ClientPersistenceDatabase.Contract": "1.0.0"
+          "Client.PersistenceDatabase.Contract": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Client.Service.Queries.dll": {}
         },
         "runtime": {
           "bin/placeholder/Client.Service.Queries.dll": {}
-        }
-      },
-      "ClientDomain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/ClientDomain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ClientDomain.dll": {}
-        }
-      },
-      "ClientPersistenceDatabase/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "ClientDomain": "1.0.0",
-          "ClientPersistenceDatabase.Contract": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
-        },
-        "compile": {
-          "bin/placeholder/ClientPersistenceDatabase.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ClientPersistenceDatabase.dll": {}
-        }
-      },
-      "ClientPersistenceDatabase.Contract/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "ClientDomain": "1.0.0",
-          "Common.Repository": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
-        },
-        "compile": {
-          "bin/placeholder/ClientPersistenceDatabase.Contract.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ClientPersistenceDatabase.Contract.dll": {}
         }
       },
       "Common.Repository/1.0.0": {
@@ -1880,30 +1880,30 @@
         "version.txt"
       ]
     },
+    "Client.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Client/ClientDomain/Client.Domain.csproj",
+      "msbuildProject": "../../Client/ClientDomain/Client.Domain.csproj"
+    },
     "Client.Mapper/1.0.0": {
       "type": "project",
       "path": "../../Client/Client.Mapper/Client.Mapper.csproj",
       "msbuildProject": "../../Client/Client.Mapper/Client.Mapper.csproj"
     },
+    "Client.PersistenceDatabase/1.0.0": {
+      "type": "project",
+      "path": "../../Client/ClientPersistenceDatabase/Client.PersistenceDatabase.csproj",
+      "msbuildProject": "../../Client/ClientPersistenceDatabase/Client.PersistenceDatabase.csproj"
+    },
+    "Client.PersistenceDatabase.Contract/1.0.0": {
+      "type": "project",
+      "path": "../../Client/ClientPersistenceDatabase.Contract/Client.PersistenceDatabase.Contract.csproj",
+      "msbuildProject": "../../Client/ClientPersistenceDatabase.Contract/Client.PersistenceDatabase.Contract.csproj"
+    },
     "Client.Service.Queries/1.0.0": {
       "type": "project",
       "path": "../../Client/Client.Service.Queries/Client.Service.Queries.csproj",
       "msbuildProject": "../../Client/Client.Service.Queries/Client.Service.Queries.csproj"
-    },
-    "ClientDomain/1.0.0": {
-      "type": "project",
-      "path": "../../Client/ClientDomain/ClientDomain.csproj",
-      "msbuildProject": "../../Client/ClientDomain/ClientDomain.csproj"
-    },
-    "ClientPersistenceDatabase/1.0.0": {
-      "type": "project",
-      "path": "../../Client/ClientPersistenceDatabase/ClientPersistenceDatabase.csproj",
-      "msbuildProject": "../../Client/ClientPersistenceDatabase/ClientPersistenceDatabase.csproj"
-    },
-    "ClientPersistenceDatabase.Contract/1.0.0": {
-      "type": "project",
-      "path": "../../Client/ClientPersistenceDatabase.Contract/ClientPersistenceDatabase.Contract.csproj",
-      "msbuildProject": "../../Client/ClientPersistenceDatabase.Contract/ClientPersistenceDatabase.Contract.csproj"
     },
     "Common.Repository/1.0.0": {
       "type": "project",
@@ -1913,8 +1913,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Client.PersistenceDatabase >= 1.0.0",
       "Client.Service.Queries >= 1.0.0",
-      "ClientPersistenceDatabase >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0"
     ]
   },
@@ -1924,9 +1924,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\DependencyResolverClient.csproj",
-      "projectName": "DependencyResolverClient",
-      "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\DependencyResolverClient.csproj",
+      "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\Client.DependencyResolver.csproj",
+      "projectName": "Client.DependencyResolver",
+      "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\Client.DependencyResolver.csproj",
       "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
       "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\ClassLibrary1\\obj\\",
       "projectStyle": "PackageReference",
@@ -1948,8 +1948,8 @@
             "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Service.Queries\\Client.Service.Queries.csproj": {
               "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Service.Queries\\Client.Service.Queries.csproj"
             },
-            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase\\ClientPersistenceDatabase.csproj": {
-              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase\\ClientPersistenceDatabase.csproj"
+            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase\\Client.PersistenceDatabase.csproj": {
+              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase\\Client.PersistenceDatabase.csproj"
             }
           }
         }

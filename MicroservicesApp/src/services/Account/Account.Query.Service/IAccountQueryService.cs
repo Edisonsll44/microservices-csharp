@@ -9,5 +9,7 @@ namespace Account.Query.Service
         IEnumerable<AccountDto> GetAccounts();
 
         acc.Account GetAccountEntity(int id);
+
+
     }
 }

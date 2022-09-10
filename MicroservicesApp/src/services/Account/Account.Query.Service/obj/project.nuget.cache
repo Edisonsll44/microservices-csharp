@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YBaCd9PeuhiWGECyOQzESjpVm1zGJNR1U9aYJBJHqcVk1YdXd4dGd3K6ojdeMwVZLqlI2UpjwwnekLvWdCsQYQ==",
+  "dgSpecHash": "FdmtEZAFulfyfF202XTiyq/VDreM76Em5SBBGciPBYuYjrTYUyaAONGhEfywyvt2WhAiwVm5jOZRtFZawIIiHA==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Query.Service\\Account.Query.Service.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\edison.sanchez\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\edison.sanchez\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\edison.sanchez\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

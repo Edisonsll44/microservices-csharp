@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
 namespace AccountMapper.Dto
 {
-    public class AccountDto
+    public class AccountDto : INotification
     {
         public int CuentaId { get; set; }
         public string TipoCuenta { get; set; }
 
     }
 
+    public class CommandCreateAccountDto : AccountDto { }
+    public class CommandUpdateAccountDto : AccountDto { }
     public class AccountClientDto
     {
         public int CuentaClienteId { get; set; }

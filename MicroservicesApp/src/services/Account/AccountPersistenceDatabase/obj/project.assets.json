@@ -607,14 +607,14 @@
           }
         }
       },
-      "AccountDomain/1.0.0": {
+      "Account.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/AccountDomain.dll": {}
+          "bin/placeholder/Account.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AccountDomain.dll": {}
+          "bin/placeholder/Account.Domain.dll": {}
         }
       },
       "Common.Repository/1.0.0": {
@@ -1823,10 +1823,10 @@
         "version.txt"
       ]
     },
-    "AccountDomain/1.0.0": {
+    "Account.Domain/1.0.0": {
       "type": "project",
-      "path": "../AccountDomain/AccountDomain.csproj",
-      "msbuildProject": "../AccountDomain/AccountDomain.csproj"
+      "path": "../AccountDomain/Account.Domain.csproj",
+      "msbuildProject": "../AccountDomain/Account.Domain.csproj"
     },
     "Common.Repository/1.0.0": {
       "type": "project",
@@ -1836,7 +1836,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "AccountDomain >= 1.0.0",
+      "Account.Domain >= 1.0.0",
       "Common.Repository >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8"
     ]
@@ -1847,9 +1847,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj",
-      "projectName": "AccountPersistenceDatabase",
-      "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\AccountPersistenceDatabase.csproj",
+      "projectUniqueName": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\Account.PersistenceDatabase.csproj",
+      "projectName": "Account.PersistenceDatabase",
+      "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\Account.PersistenceDatabase.csproj",
       "packagesPath": "C:\\Users\\edison.sanchez\\.nuget\\packages\\",
       "outputPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountPersistenceDatabase\\obj\\",
       "projectStyle": "PackageReference",
@@ -1868,8 +1868,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj": {
-              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\AccountDomain.csproj"
+            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\Account.Domain.csproj": {
+              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountDomain\\Account.Domain.csproj"
             },
             "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\Common.Repository.csproj": {
               "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Common\\Common.Repository\\Common.Repository.csproj"
