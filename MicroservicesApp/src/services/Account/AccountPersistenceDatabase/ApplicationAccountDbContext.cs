@@ -1,6 +1,7 @@
 ﻿using AccountDomain;
 using AccountPersistenceDatabase.Configuration;
 using Microsoft.EntityFrameworkCore;
+using ac = AccountDomain;
 
 namespace AccountPersistenceDatabase
 {
@@ -11,7 +12,7 @@ namespace AccountPersistenceDatabase
 
         }
 
-        public DbSet<Account> Accounts { get; set; }
+        public DbSet<ac.Account> Accounts { get; set; }
         public DbSet<AccountClient> AccountClients { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -24,7 +25,7 @@ namespace AccountPersistenceDatabase
         /// <param name="modelBuilder"></param>
         private void ModelConfig(ModelBuilder modelBuilder)
         {
-            new AccountConfiguration(modelBuilder.Entity<Account>());
+            new AccountConfiguration(modelBuilder.Entity<ac.Account>());
         }
 
     }

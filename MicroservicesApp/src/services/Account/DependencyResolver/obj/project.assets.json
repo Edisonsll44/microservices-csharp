@@ -648,6 +648,7 @@
           "Account.Mapper": "1.0.0",
           "Account.PersistenceDatabase": "1.0.0",
           "Account.Query.Service": "1.0.0",
+          "Account.Service.Proxies": "1.0.0",
           "Client.Mapper": "1.0.0",
           "Common.Repository": "1.0.0",
           "MediatR": "10.0.1",
@@ -711,6 +712,22 @@
         },
         "runtime": {
           "bin/placeholder/Account.Query.Service.dll": {}
+        }
+      },
+      "Account.Service.Proxies/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Account.Mapper": "1.0.0",
+          "Client.Mapper": "1.0.0",
+          "Common.Repository": "1.0.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Account.Service.Proxies.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Account.Service.Proxies.dll": {}
         }
       },
       "Client.Domain/1.0.0": {
@@ -2045,6 +2062,11 @@
       "type": "project",
       "path": "../Account.Query.Service/Account.Query.Service.csproj",
       "msbuildProject": "../Account.Query.Service/Account.Query.Service.csproj"
+    },
+    "Account.Service.Proxies/1.0.0": {
+      "type": "project",
+      "path": "../Account.Service.Proxies/Account.Service.Proxies.csproj",
+      "msbuildProject": "../Account.Service.Proxies/Account.Service.Proxies.csproj"
     },
     "Client.Domain/1.0.0": {
       "type": "project",

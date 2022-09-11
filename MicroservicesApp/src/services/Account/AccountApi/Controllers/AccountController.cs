@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AccountApi.Controllers
 {
     [Produces("application/json")]
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class AccountController : ControllerBase
     {
@@ -31,6 +31,21 @@ namespace AccountApi.Controllers
             try
             {
                 return Ok(_accountQueryService.GetAccount(id));
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw new Exception(e.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("GetAccountByType")]
+        public async Task<IActionResult> GetAccountByType(string accountType)
+        {
+            try
+            {
+                return Ok(_accountQueryService.GetAccountEntity(accountType));
             }
             catch (Exception e)
             {

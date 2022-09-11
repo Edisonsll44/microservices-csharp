@@ -11,9 +11,9 @@ namespace ClientApp.Controllers
     public class ClientController : ControllerBase
     {
         private readonly IClientQueryService _clientQueryService;
-        private readonly ILogger<DefaultController> _logger;
+        private readonly ILogger<ClientController> _logger;
 
-        public ClientController(IClientQueryService clientQueryService, ILogger<DefaultController> logger)
+        public ClientController(IClientQueryService clientQueryService, ILogger<ClientController> logger)
         {
             _clientQueryService = clientQueryService;
             _logger = logger;
@@ -27,6 +27,21 @@ namespace ClientApp.Controllers
             try
             {
                 return Ok(_clientQueryService.GetClient(id));
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw new Exception(e.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("GetClientByIdentification")]
+        public async Task<IActionResult> GetClientByIdentification(string identification)
+        {
+            try
+            {
+                return Ok(_clientQueryService.GetClient(identification));
             }
             catch (Exception e)
             {

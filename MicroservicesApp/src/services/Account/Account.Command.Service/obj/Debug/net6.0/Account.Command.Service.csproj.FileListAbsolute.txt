@@ -25,3 +25,5 @@ C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\Account.Co
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\Account.Command.Service\bin\Debug\net6.0\Account.PersistenceDatabase.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\Account.Command.Service\bin\Debug\net6.0\Account.Domain.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\Account.Command.Service\bin\Debug\net6.0\Client.Domain.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\Account.Command.Service\bin\Debug\net6.0\Account.Service.Proxies.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\Account.Command.Service\bin\Debug\net6.0\Account.Service.Proxies.pdb

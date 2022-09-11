@@ -1,3 +1,4 @@
+using Account.Service.Proxies;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
@@ -15,8 +16,13 @@ builder.Services.AddMediatR(Assembly.Load("Account.Command.Service"));
 //config db
 Account.DependencyResolver.IoCRegisterDataContext.AddRegisterContext(builder.Services, builder.Configuration.GetConnectionString("DefaultConnection"));
 Account.DependencyResolver.IoCRegister.AddRegistration(builder.Services);
+
+//Api URL
+builder.Services.Configure<ApiUrls>(ops => builder.Configuration.GetSection("ApiUrls").Bind(ops));
+
 var app = builder.Build();
 
+//builder.Services.AddHttpClient();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

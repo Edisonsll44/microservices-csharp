@@ -23,6 +23,18 @@ namespace AccountMapper
             };
         }
 
+        public static AccountClient MapDtoToEntity(CommandCreateAccountClientDto dto, int accountId, int clientId)
+        {
+            return new AccountClient
+            {
+                AccountId = accountId,
+                AccountNumber = dto.NumeroCuenta,
+                Balance = dto.Saldo,
+                State = dto.Estado,
+                ClientId = clientId
+            };
+        }
+
         public static Account MapDtoToEntity(Account account, AccountDto dto)
         {
             account.AccountId = dto.CuentaId;

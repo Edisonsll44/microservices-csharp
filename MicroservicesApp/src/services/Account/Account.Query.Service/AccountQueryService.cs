@@ -24,6 +24,15 @@ namespace Account.Query.Service
             return account;
         }
 
+        public AccountDto GetAccountEntity(string accountType)
+        {
+            var accountFound = _accountRepository.GetFirst<acc.Account>(a => a.AccountType.Equals(accountType));
+            if (accountFound == null)
+                throw new Exception("Tipo de cuenta no encontrada, vuelva a intentarlo");
+            var dto = AccountMapper.AccountMapper.MapEntityToDto(accountFound);
+            return dto;
+        }
+
         public IEnumerable<AccountDto> GetAccounts()
         {
             var account = _accountRepository.GetAll<acc.Account>();
