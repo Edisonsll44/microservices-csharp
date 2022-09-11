@@ -105,6 +105,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07.Proxies", "07.Proxies", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Service.Proxies", "src\services\Account\Account.Service.Proxies\Account.Service.Proxies.csproj", "{4C0FF77E-5F8D-46C8-A5E4-868678E27BAD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Script", "04.Script", "{3711C3C1-0132-4EC1-8FEB-E753875A594F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Users\edison.sanchez\Desktop\script.sql = ..\..\..\..\Users\edison.sanchez\Desktop\script.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
