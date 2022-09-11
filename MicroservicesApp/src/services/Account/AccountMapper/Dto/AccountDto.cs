@@ -18,6 +18,8 @@ namespace AccountMapper.Dto
         public string NumeroCuenta { get; set; }
         public decimal Saldo { get; set; }
         public bool Estado { get; set; }
+        public string EstadoWeb { get; set; }
         public string IdentificacionCliente { get; set; }
+        public string NombreCliente { get; set; }
     }
 }

@@ -527,10 +527,35 @@
       "Account.Query.Service/1.0.0": {
         "dependencies": {
           "Account.Mapper": "1.0.0",
-          "Account.PersistenceDatabase": "1.0.0"
+          "Account.PersistenceDatabase": "1.0.0",
+          "Account.Service.Proxies": "1.0.0"
         },
         "runtime": {
           "Account.Query.Service.dll": {}
+        }
+      },
+      "Account.Service.Proxies/1.0.0": {
+        "dependencies": {
+          "Account.Mapper": "1.0.0",
+          "Client.Mapper": "1.0.0",
+          "Common.Repository": "1.0.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "runtime": {
+          "Account.Service.Proxies.dll": {}
+        }
+      },
+      "Client.Domain/1.0.0": {
+        "runtime": {
+          "Client.Domain.dll": {}
+        }
+      },
+      "Client.Mapper/1.0.0": {
+        "dependencies": {
+          "Client.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Client.Mapper.dll": {}
         }
       },
       "Common.Repository/1.0.0": {
@@ -918,6 +943,21 @@
       "sha512": ""
     },
     "Account.Query.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Account.Service.Proxies/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Client.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Client.Mapper/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

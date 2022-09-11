@@ -667,6 +667,45 @@
           "bin/placeholder/Account.PersistenceDatabase.dll": {}
         }
       },
+      "Account.Service.Proxies/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Account.Mapper": "1.0.0",
+          "Client.Mapper": "1.0.0",
+          "Common.Repository": "1.0.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Account.Service.Proxies.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Account.Service.Proxies.dll": {}
+        }
+      },
+      "Client.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Client.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Client.Domain.dll": {}
+        }
+      },
+      "Client.Mapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Client.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Client.Mapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Client.Mapper.dll": {}
+        }
+      },
       "Common.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1918,6 +1957,21 @@
       "path": "../AccountPersistenceDatabase/Account.PersistenceDatabase.csproj",
       "msbuildProject": "../AccountPersistenceDatabase/Account.PersistenceDatabase.csproj"
     },
+    "Account.Service.Proxies/1.0.0": {
+      "type": "project",
+      "path": "../Account.Service.Proxies/Account.Service.Proxies.csproj",
+      "msbuildProject": "../Account.Service.Proxies/Account.Service.Proxies.csproj"
+    },
+    "Client.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Client/ClientDomain/Client.Domain.csproj",
+      "msbuildProject": "../../Client/ClientDomain/Client.Domain.csproj"
+    },
+    "Client.Mapper/1.0.0": {
+      "type": "project",
+      "path": "../../Client/Client.Mapper/Client.Mapper.csproj",
+      "msbuildProject": "../../Client/Client.Mapper/Client.Mapper.csproj"
+    },
     "Common.Repository/1.0.0": {
       "type": "project",
       "path": "../../Common/Common.Repository/Common.Repository.csproj",
@@ -1927,7 +1981,8 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Account.Mapper >= 1.0.0",
-      "Account.PersistenceDatabase >= 1.0.0"
+      "Account.PersistenceDatabase >= 1.0.0",
+      "Account.Service.Proxies >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1957,6 +2012,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Service.Proxies\\Account.Service.Proxies.csproj": {
+              "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Service.Proxies\\Account.Service.Proxies.csproj"
+            },
             "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\Account.Mapper.csproj": {
               "projectPath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\Account.Mapper.csproj"
             },

@@ -592,7 +592,8 @@
       "Account.Query.Service/1.0.0": {
         "dependencies": {
           "Account.Mapper": "1.0.0",
-          "Account.PersistenceDatabase": "1.0.0"
+          "Account.PersistenceDatabase": "1.0.0",
+          "Account.Service.Proxies": "1.0.0"
         },
         "runtime": {
           "Account.Query.Service.dll": {}

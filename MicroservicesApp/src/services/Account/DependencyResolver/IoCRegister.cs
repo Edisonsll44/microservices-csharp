@@ -1,6 +1,8 @@
 ﻿using Account.Command.Service.Handlers;
+using Account.Command.Service.Handlers.Account;
 using Account.PersistenceDatabase.Repositories;
 using Account.Query.Service;
+using Account.Query.Service.Account;
 using Account.Service.Proxies;
 using AccountPersistenceDatabase.Repositories;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,6 +26,7 @@ namespace Account.DependencyResolver
             services.AddTransient<IAccountUpdateEventHandlerService, AccountUpdateEventHandlerService>();
             services.AddTransient<IAccountCreateEventHandlerService, AccountCreateEventHandlerService>();
             services.AddTransient<IAccountCreateEventHandlerService, AccountCreateEventHandlerService>();
+            services.AddTransient<IAccountClientQueryService, AccountClientQueryService>();
             return services;
         }
 

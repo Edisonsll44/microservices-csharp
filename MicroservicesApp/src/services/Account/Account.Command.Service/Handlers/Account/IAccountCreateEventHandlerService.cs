@@ -1,8 +1,8 @@
 ﻿using AccountMapper.Dto;
 
-namespace Account.Command.Service.Handlers
+namespace Account.Command.Service.Handlers.Account
 {
-    public interface IAccountUpdateEventHandlerService
+    public interface IAccountCreateEventHandlerService
     {
 
         /// <summary>
@@ -10,7 +10,7 @@ namespace Account.Command.Service.Handlers
         /// </summary>
         /// <param name="dto"></param>
         /// <returns></returns>
-        Task Handle(CommandUpdateAccountDto dto, CancellationToken token);
+        Task Handle(CommandCreateAccountDto dto, CancellationToken token);
 
     }
 }

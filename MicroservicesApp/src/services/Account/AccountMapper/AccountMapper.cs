@@ -56,5 +56,39 @@ namespace AccountMapper
             }
             return clientsDto;
         }
+
+
+        public static IEnumerable<CommandCreateAccountClientDto> MapEntityToDtoCollection(IEnumerable<AccountClient> accountsClients, IEnumerable<object> client)
+        {
+            var clientsDto = new List<CommandCreateAccountClientDto>();
+            var t = client;
+            foreach (var account in accountsClients)
+            {
+                var dto = new CommandCreateAccountClientDto
+                {
+                    NumeroCuenta = account.AccountNumber,
+                    Saldo = account.Balance,
+                    EstadoWeb = account.State == true ? "True" : "False",
+                    //IdentificacionCliente = clientDni,
+                    //NombreCliente = clientName
+
+                };
+                clientsDto.Add(dto);
+            }
+            return clientsDto;
+        }
+
+        public static CommandCreateAccountClientDto MapEntityToDto(AccountClient accountClient, string accountType, string clientDni, string clientName)
+        {
+            return new CommandCreateAccountClientDto
+            {
+                NumeroCuenta = accountClient.AccountNumber,
+                TipoCuenta = accountType,
+                Saldo = accountClient.Balance,
+                EstadoWeb = accountClient.State == true ? "True" : "False",
+                IdentificacionCliente = clientDni,
+                NombreCliente = clientName
+            };
+        }
     }
 }

@@ -51,6 +51,21 @@ namespace ClientApp.Controllers
         }
 
         [HttpGet]
+        [Route("GetClientByName")]
+        public async Task<IActionResult> GetClientByName(string name)
+        {
+            try
+            {
+                return Ok(_clientQueryService.GetClientByName(name));
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw new Exception(e.Message);
+            }
+        }
+
+        [HttpGet]
         [Route("GetClients")]
         public IActionResult GetClients()
         {

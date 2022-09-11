@@ -31,3 +31,9 @@ C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Movement.Query.Service.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Account.Mapper.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Movement.Mapper.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Account.Service.Proxies.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Client.Domain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Client.Mapper.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Account.Service.Proxies.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Client.Domain.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Client.Mapper.pdb

@@ -1,11 +1,11 @@
-﻿using Account.Query.Service;
+﻿using Account.Query.Service.Account;
 using AccountMapper.Dto;
 using AccountPersistenceDatabase.Repositories;
 using Common.Repository.Generics;
 using MediatR;
 using Microsoft.AspNetCore.JsonPatch;
 
-namespace Account.Command.Service.Handlers
+namespace Account.Command.Service.Handlers.Account
 {
     public class AccountCommandService : IAccountCommandService
     {

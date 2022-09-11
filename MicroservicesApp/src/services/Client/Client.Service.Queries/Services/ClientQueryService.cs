@@ -57,6 +57,13 @@ namespace Client.Service.Queries.Services
             return clientDto;
         }
 
+        public ClientDto GetClientByName(string name)
+        {
+            var client = _clientRepository.GetFirst<domain.Client>(c => c.Nombre.Equals(name));
+            var clientDto = ClientMapper.MapEntityToDto(client);
+            return clientDto;
+        }
+
         /// <summary>
         /// Devuelve todos los clientes
         /// </summary>

@@ -2,7 +2,7 @@
 using MediatR;
 using Microsoft.AspNetCore.JsonPatch;
 
-namespace Account.Command.Service.Handlers
+namespace Account.Command.Service.Handlers.Account
 {
     public interface IAccountCommandService
     {

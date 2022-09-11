@@ -843,7 +843,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Account.Mapper": "1.0.0",
-          "Account.PersistenceDatabase": "1.0.0"
+          "Account.PersistenceDatabase": "1.0.0",
+          "Account.Service.Proxies": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Account.Query.Service.dll": {}

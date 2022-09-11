@@ -1,5 +1,5 @@
-﻿using Account.Command.Service.Handlers;
-using Account.Query.Service;
+﻿using Account.Command.Service.Handlers.Account;
+using Account.Query.Service.Account;
 using AccountMapper.Dto;
 using MediatR;
 using Microsoft.AspNetCore.JsonPatch;
@@ -61,6 +61,21 @@ namespace AccountApi.Controllers
             try
             {
                 return Ok(_accountQueryService.GetAccounts());
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw new Exception(e.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("GetAccountById")]
+        public IActionResult GetAccountById(int id)
+        {
+            try
+            {
+                return Ok(_accountQueryService.GetAccountById(id));
             }
             catch (Exception e)
             {

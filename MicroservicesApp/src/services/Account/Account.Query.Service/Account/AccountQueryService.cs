@@ -1,7 +1,7 @@
 ﻿using AccountMapper.Dto;
 using AccountPersistenceDatabase.Repositories;
 using acc = AccountDomain;
-namespace Account.Query.Service
+namespace Account.Query.Service.Account
 {
     public class AccountQueryService : IAccountQueryService
     {
@@ -27,6 +27,15 @@ namespace Account.Query.Service
         public AccountDto GetAccountEntity(string accountType)
         {
             var accountFound = _accountRepository.GetFirst<acc.Account>(a => a.AccountType.Equals(accountType));
+            if (accountFound == null)
+                throw new Exception("Tipo de cuenta no encontrada, vuelva a intentarlo");
+            var dto = AccountMapper.AccountMapper.MapEntityToDto(accountFound);
+            return dto;
+        }
+
+        public AccountDto GetAccountById(int accountId)
+        {
+            var accountFound = _accountRepository.GetFirst<acc.Account>(a => a.AccountId == accountId);
             if (accountFound == null)
                 throw new Exception("Tipo de cuenta no encontrada, vuelva a intentarlo");
             var dto = AccountMapper.AccountMapper.MapEntityToDto(accountFound);

@@ -12,5 +12,15 @@ namespace Account.Service.Proxies
         /// <param name="dni"></param>
         /// <returns></returns>
         Task<int> GetClientId(string dni);
+
+        /// <summary>
+        /// Deveuelve un cliente
+        /// filtrado por su nombre
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        Task<ClientDto> GetClient(string name);
+
+        Task<IEnumerable<ClientDto>> GetClients();
     }
 }

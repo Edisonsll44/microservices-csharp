@@ -1,7 +1,7 @@
 ﻿using AccountMapper.Dto;
 using acc = AccountDomain;
 
-namespace Account.Query.Service
+namespace Account.Query.Service.Account
 {
     public interface IAccountQueryService
     {
@@ -31,5 +31,7 @@ namespace Account.Query.Service
         /// <param name="accountType"></param>
         /// <returns></returns>
         AccountDto GetAccountEntity(string accountType);
+
+        AccountDto GetAccountById(int accountId);
     }
 }

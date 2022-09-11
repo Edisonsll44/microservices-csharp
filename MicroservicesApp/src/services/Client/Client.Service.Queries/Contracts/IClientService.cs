@@ -47,5 +47,7 @@ namespace Client.Service.Queries.Contracts
         /// <param name="id"></param>
         /// <returns></returns>
         Task<DtoRespuesta> DeleteClient(int id);
+
+        ClientDto GetClientByName(string name);
     }
 }

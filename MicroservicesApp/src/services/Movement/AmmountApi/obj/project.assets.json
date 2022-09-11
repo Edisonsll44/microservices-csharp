@@ -793,13 +793,53 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Account.Mapper": "1.0.0",
-          "Account.PersistenceDatabase": "1.0.0"
+          "Account.PersistenceDatabase": "1.0.0",
+          "Account.Service.Proxies": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Account.Query.Service.dll": {}
         },
         "runtime": {
           "bin/placeholder/Account.Query.Service.dll": {}
+        }
+      },
+      "Account.Service.Proxies/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Account.Mapper": "1.0.0",
+          "Client.Mapper": "1.0.0",
+          "Common.Repository": "1.0.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Account.Service.Proxies.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Account.Service.Proxies.dll": {}
+        }
+      },
+      "Client.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Client.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Client.Domain.dll": {}
+        }
+      },
+      "Client.Mapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Client.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Client.Mapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Client.Mapper.dll": {}
         }
       },
       "Common.Repository/1.0.0": {
@@ -2345,6 +2385,21 @@
       "type": "project",
       "path": "../../Account/Account.Query.Service/Account.Query.Service.csproj",
       "msbuildProject": "../../Account/Account.Query.Service/Account.Query.Service.csproj"
+    },
+    "Account.Service.Proxies/1.0.0": {
+      "type": "project",
+      "path": "../../Account/Account.Service.Proxies/Account.Service.Proxies.csproj",
+      "msbuildProject": "../../Account/Account.Service.Proxies/Account.Service.Proxies.csproj"
+    },
+    "Client.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Client/ClientDomain/Client.Domain.csproj",
+      "msbuildProject": "../../Client/ClientDomain/Client.Domain.csproj"
+    },
+    "Client.Mapper/1.0.0": {
+      "type": "project",
+      "path": "../../Client/Client.Mapper/Client.Mapper.csproj",
+      "msbuildProject": "../../Client/Client.Mapper/Client.Mapper.csproj"
     },
     "Common.Repository/1.0.0": {
       "type": "project",

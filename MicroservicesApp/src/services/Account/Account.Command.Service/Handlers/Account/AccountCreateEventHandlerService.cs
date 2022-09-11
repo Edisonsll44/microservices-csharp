@@ -3,7 +3,7 @@ using AccountMapper.Dto;
 using AccountPersistenceDatabase.Repositories;
 using MediatR;
 
-namespace Account.Command.Service.Handlers
+namespace Account.Command.Service.Handlers.Account
 {
     public class AccountCreateEventHandlerService : IAccountCreateEventHandlerService, INotificationHandler<CommandCreateAccountDto>
     {
