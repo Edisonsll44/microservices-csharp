@@ -11,7 +11,8 @@
           "Common.Repository": "1.0.0",
           "Microsoft.AspNetCore.JsonPatch": "6.0.8",
           "Movement.Mapper": "1.0.0",
-          "Movement.PersistenceDatabase": "1.0.0"
+          "Movement.PersistenceDatabase": "1.0.0",
+          "Movement.Service.Proxy": "1.0.0"
         },
         "runtime": {
           "Movement.Command.Service.dll": {}
@@ -479,6 +480,19 @@
           }
         }
       },
+      "Client.Domain/1.0.0": {
+        "runtime": {
+          "Client.Domain.dll": {}
+        }
+      },
+      "Client.Mapper/1.0.0": {
+        "dependencies": {
+          "Client.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Client.Mapper.dll": {}
+        }
+      },
       "Common.Repository/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
@@ -509,6 +523,15 @@
         },
         "runtime": {
           "Movement.PersistenceDatabase.dll": {}
+        }
+      },
+      "Movement.Service.Proxy/1.0.0": {
+        "dependencies": {
+          "Client.Mapper": "1.0.0",
+          "Common.Repository": "1.0.0"
+        },
+        "runtime": {
+          "Movement.Service.Proxy.dll": {}
         }
       }
     }
@@ -813,6 +836,16 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
+    "Client.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Client.Mapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Common.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -829,6 +862,11 @@
       "sha512": ""
     },
     "Movement.PersistenceDatabase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Movement.Service.Proxy/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

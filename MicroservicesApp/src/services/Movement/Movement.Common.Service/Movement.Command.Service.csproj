@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Common\Common.Repository\Common.Repository.csproj" />
     <ProjectReference Include="..\Movement.Mapper\Movement.Mapper.csproj" />
+    <ProjectReference Include="..\Movement.Proxy\Movement.Service.Proxy.csproj" />
     <ProjectReference Include="..\MovementPersistenceDatabase\Movement.PersistenceDatabase.csproj" />
   </ItemGroup>
 

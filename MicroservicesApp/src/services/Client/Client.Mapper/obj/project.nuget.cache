@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kDEpEq1AgYzO8O8dkYAZv0MSFHIuuAtU+3JFkUnmWr/Y77vWkjbWIHV/h3SdchG6VMmDdK9pIawKmnlYc+d8Hw==",
+  "dgSpecHash": "iYMdQrJGOlP5DpwDFsnXerKr8PVtTLZXYZv7fZwiheGZhzLFpxnDT6rxrzlfNInT58sOpc8KTkoBJzda+igtWQ==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\Client.Mapper\\Client.Mapper.csproj",
   "expectedPackageFiles": [],

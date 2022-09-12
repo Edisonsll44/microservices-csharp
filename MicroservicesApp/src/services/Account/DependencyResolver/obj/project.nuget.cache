@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jutGgFdDhYe9dA1I6IeQRSLCcAIltbiPKKTZu2FISsnttYbnzCY1VmSdDHaFGFmFRx7Q8v/uz4HYEdsq73iG1A==",
+  "dgSpecHash": "ue4mvaqgbqtSMnESTZEjNY4Htfrul/fP9DiX2DtwktbJ4lRV9SAZeGv+RJ/hBf8Hh7pr3wxmFQ9P8ycOUx9wVg==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\DependencyResolver\\Account.DependencyResolver.csproj",
   "expectedPackageFiles": [

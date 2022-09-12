@@ -2,6 +2,7 @@
 using Movement.Command.Service;
 using Movement.PersistenceDatabase;
 using Movement.Query.Service;
+using Movement.Rules.Business;
 
 namespace Movement.DependencyResolver
 {
@@ -11,7 +12,7 @@ namespace Movement.DependencyResolver
         {
             AddRegisterRepositories(services);
             AddRegisterServices(services);
-
+            AddRegisterValidations(services);
             return services;
         }
         public static IServiceCollection AddRegisterServices(this IServiceCollection services)
@@ -24,6 +25,12 @@ namespace Movement.DependencyResolver
         public static IServiceCollection AddRegisterRepositories(this IServiceCollection services)
         {
             services.AddTransient<IMovementRepository, MovementRepository>();
+            return services;
+        }
+
+        public static IServiceCollection AddRegisterValidations(this IServiceCollection services)
+        {
+            services.AddTransient<IBalanceValidator, BalanceValidator>();
             return services;
         }
     }

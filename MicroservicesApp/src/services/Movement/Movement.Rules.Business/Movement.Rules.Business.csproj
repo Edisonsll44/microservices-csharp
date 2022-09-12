@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.WebAPI" Version="8.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Movement.Mapper\Movement.Mapper.csproj" />
+    <ProjectReference Include="..\MovementPersistenceDatabase\Movement.PersistenceDatabase.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -91,3 +91,13 @@ C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountAp
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountApi\bin\Debug\net6.0\Account.Service.Proxies.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountApi\bin\Debug\net6.0\Client.Domain.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountApi\bin\Debug\net6.0\Client.Mapper.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountApi\bin\Debug\net6.0\Movement.Service.Proxy.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountApi\bin\Debug\net6.0\Movement.Service.Proxy.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountApi\bin\Debug\net6.0\FluentValidation.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountApi\bin\Debug\net6.0\FluentValidation.ValidatorAttribute.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountApi\bin\Debug\net6.0\FluentValidation.WebApi.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountApi\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountApi\bin\Debug\net6.0\System.Web.Http.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountApi\bin\Debug\net6.0\Movement.Rules.Business.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\AmmountApi\bin\Debug\net6.0\Movement.Rules.Business.pdb

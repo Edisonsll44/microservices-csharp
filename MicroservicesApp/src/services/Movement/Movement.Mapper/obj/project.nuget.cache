@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SZ2WeL0Zi1m6iyl9KxPO4BHXYAF9nCr8Vu5/p5Wh2Y5Hzf/d4FqxodecCIUPi0CZZpFL12lU0WhjaqDDUjA4FQ==",
+  "dgSpecHash": "iLhXXvuHogPvfVuHQqLtXuEx5fPmxqTlj+lAjB9JadjuZcGdKQJ0/nN8lgeRfex7eT1L3/958tgwN6+BLHYoXg==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\Movement.Mapper\\Movement.Mapper.csproj",
   "expectedPackageFiles": [],

@@ -49,24 +49,14 @@ namespace MovementPersistenceDatabase.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("TipoMovimiento");
 
-                    b.Property<decimal>("Value")
-                        .HasColumnType("decimal(18,2)")
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("Tipo");
 
                     b.HasKey("MovementId");
 
                     b.ToTable("Movimientos", "movement");
-
-                    b.HasData(
-                        new
-                        {
-                            MovementId = 1,
-                            AccountId = 1,
-                            Balance = 2000m,
-                            MovementDate = new DateTime(2022, 9, 8, 15, 12, 19, 259, DateTimeKind.Local).AddTicks(4903),
-                            MovementType = "Retiro de 575",
-                            Value = 0m
-                        });
                 });
 #pragma warning restore 612, 618
         }

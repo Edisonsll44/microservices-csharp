@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GgLScTdqevhSdXpmqyd4/XG9qiwV3/eUCqf+XeOa5AZ3oZ3Ik1WIdkbmnYBa3v4scyvXUpWu2ovqrrqUxA5gEw==",
+  "dgSpecHash": "Tan8hFdPiVQgIEzKUR065sd23IvagBOIJ+P9cm/bDYc9MloDeDet40gyco8EUFN4ee5GITr30UMuN1dBAq2N5Q==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Service.Proxies\\Account.Service.Proxies.csproj",
   "expectedPackageFiles": [

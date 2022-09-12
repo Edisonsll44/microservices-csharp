@@ -14,20 +14,20 @@ namespace Movement.Mapper
                 MovimientoId = movement.MovementId,
                 Saldo = movement.Balance,
                 TipoMovimiento = movement.MovementType,
-                Valor = movement.Value
+                Tipo = movement.Value
             };
         }
 
-        public static mov.Movement MapDtoToEntity(MovementDto movement)
+        public static mov.Movement MapDtoToEntity(MovementDto movement, string tipo, decimal actualBalance)
         {
             return new mov.Movement
             {
                 AccountId = movement.CuentaId,
-                Balance = movement.Saldo,
+                Balance = tipo.Contains("Deposito") ? movement.Saldo + actualBalance : actualBalance - movement.Saldo,
                 MovementDate = movement.FechaMovimiento,
                 MovementId = movement.MovimientoId,
                 MovementType = movement.TipoMovimiento,
-                Value = movement.Valor
+                Value = movement.Tipo
             };
         }
 
@@ -38,7 +38,7 @@ namespace Movement.Mapper
             movement.MovementDate = dto.FechaMovimiento;
             movement.MovementType = dto.TipoMovimiento;
             movement.Balance = dto.Saldo;
-            movement.Value = dto.Valor;
+            movement.Value = dto.Tipo;
             return movement;
         }
 
@@ -54,7 +54,7 @@ namespace Movement.Mapper
                     MovimientoId = movement.MovementId,
                     Saldo = movement.Balance,
                     TipoMovimiento = movement.MovementType,
-                    Valor = movement.Value
+                    Tipo = movement.Value
                 };
                 clientsDto.Add(dto);
             }

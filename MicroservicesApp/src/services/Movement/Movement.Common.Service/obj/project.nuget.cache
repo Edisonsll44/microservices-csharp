@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PUMSGwr7vIQS2nRqGKqljiLnPu3dbw07yVXtWqo8K9QSGiIRL6BfJoBEZCXuHnrlrmj4d+DC9eEPgJQloMxWLQ==",
+  "dgSpecHash": "9JVxOgmXi3n64PAyJBKB7TU2bjzyvkqUcHF3ZP5fjIGUs+BMRsvS8frx5mz11dwdsJYVsW9pFOZ7tDJTIxyEdQ==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\Movement.Common.Service\\Movement.Command.Service.csproj",
   "expectedPackageFiles": [

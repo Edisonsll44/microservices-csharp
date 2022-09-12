@@ -12,7 +12,7 @@ namespace MovementDomain
         [Column("TipoMovimiento")]
         public string MovementType { get; set; }
         [Column("Tipo")]
-        public decimal Value { get; set; }
+        public string Value { get; set; }
         [Column("Saldo", TypeName = "decimal(18,4)")]
         public decimal Balance { get; set; }
         [Column("CuentaId")]

@@ -37,3 +37,7 @@ C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Account.Service.Proxies.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Client.Domain.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Client.Mapper.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Movement.Service.Proxy.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Movement.Service.Proxy.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Movement.Rules.Business.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Movement\Movement.DependencyResolver\bin\Debug\net6.0\Movement.Rules.Business.pdb

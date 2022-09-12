@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MicroservicesApp",
+    "\\MicroservicesApp\\src",
+    "\\MicroservicesApp\\src\\services",
+    "\\MicroservicesApp\\src\\services\\Identity",
+    "\\MicroservicesApp\\src\\services\\Identity\\Identity.Domain",
+    "\\MicroservicesApp\\src\\services\\Movement",
+    "\\MicroservicesApp\\src\\services\\Movement\\AmmountApi"
   ],
-  "SelectedNode": "\\MicroservicesApp.sln",
+  "SelectedNode": "\\MicroservicesApp\\src\\services\\Identity\\Identity.Domain\\ApplicationUser.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -17,7 +17,8 @@ namespace Movement.Command.Service
         }
         public Task<DtoRespuesta> CreateMovement(MovementDto dto)
         {
-            var newMovement = MovementMapper.MapDtoToEntity(dto);
+            var balance = GetBalance(dto.CuentaId);
+            var newMovement = MovementMapper.MapDtoToEntity(dto, dto.TipoMovimiento, balance);
             _movementRepository.Create(newMovement);
             _movementRepository.Save();
             return Respuesta.DevolverRespuesta("Movimiento", "creado");
@@ -49,6 +50,14 @@ namespace Movement.Command.Service
             var movement = _movementRepository.GetById<mov.Movement>(id);
             var movementDto = MovementMapper.MapEntityToDto(movement);
             return movementDto;
+        }
+
+        decimal GetBalance(int accountId)
+        {
+            var movement = _movementRepository.Get<mov.Movement>(v => v.AccountId == accountId).OrderByDescending(f => f.MovementId).FirstOrDefault();
+            if (movement == null)
+                return 0;
+            return movement.Balance;
         }
     }
 }

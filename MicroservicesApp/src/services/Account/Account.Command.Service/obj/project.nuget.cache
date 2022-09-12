@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aCvtWqaXXmJ3tFd89tM/PdVelfz4MmyzbYz6zPW6B0BPqhspU1FzOQkMDV3fTCCkKVwCN1Ebd236zE81i5pGwQ==",
+  "dgSpecHash": "+0+mV3yIIe8IRttiUlCTAlbdfyh1SU+HTNdxbApn4+EX2U0ruxvakOljWTZbzMGaSJwbiT7Gwqt9+jiZk3bheQ==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\Account.Command.Service\\Account.Command.Service.csproj",
   "expectedPackageFiles": [

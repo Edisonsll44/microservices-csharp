@@ -1,7 +1,8 @@
-﻿namespace Common.Repository.Generics
+﻿namespace Common.Generics.Urls
 {
     public interface EndPointUrl
     {
-        public string Url { get; set; }
+        public string UrlAccount { get; set; }
+        public string UrlClient { get; set; }
     }
 }

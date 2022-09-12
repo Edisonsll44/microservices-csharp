@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Movement.Command.Service;
 using Movement.Mapper.Dto;
 using Movement.Query.Service;
+using Movement.Rules.Business;
 
 namespace Movement.Api.Controllers
 {
@@ -13,11 +14,13 @@ namespace Movement.Api.Controllers
         private readonly IMovementCommandService _movementCommandService;
         private readonly IMovementQueryService _movementQueryService;
         private readonly ILogger<MovementController> _logger;
+        private readonly IBalanceValidator _balanceValidator;
 
-        public MovementController(IMovementCommandService movementCommandService, IMovementQueryService movementQueryService, ILogger<MovementController> logger)
+        public MovementController(IMovementCommandService movementCommandService, IMovementQueryService movementQueryService, ILogger<MovementController> logger, IBalanceValidator balanceValidator)
         {
             _movementCommandService = movementCommandService;
             _movementQueryService = movementQueryService;
+            _balanceValidator = balanceValidator;
             _logger = logger;
         }
 
@@ -57,6 +60,7 @@ namespace Movement.Api.Controllers
         {
             try
             {
+                await _balanceValidator.BalanceCeroValidator(dto);
                 await _movementCommandService.CreateMovement(dto);
                 return Ok();
             }

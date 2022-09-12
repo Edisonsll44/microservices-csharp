@@ -17,7 +17,7 @@ namespace MovementPersistenceDatabase
             base.OnModelCreating(builder);
 
             builder.HasDefaultSchema("movement");
-            ModelConfig(builder);
+            //ModelConfig(builder);
         }
 
         private void ModelConfig(ModelBuilder modelBuilder)

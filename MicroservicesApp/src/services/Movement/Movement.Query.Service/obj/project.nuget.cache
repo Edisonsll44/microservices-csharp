@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "U/itd47iXuJo8fxBZEzUF9Nqp8q3U2IzwgJHGh1LUysqYvaB40I2WH+PK+RCyXAJFaTP9Muu44H9fwrb8fwgGw==",
+  "dgSpecHash": "dYvrfHlqIfJXOyKP/4Y1sC7IhjaCfmHQBveEbk6uewClCMBlP4n04G5n12t0SeFmqxA6NfgWJWeiqDfyZMKWAQ==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\Movement.Query.Service\\Movement.Query.Service.csproj",
   "expectedPackageFiles": [
