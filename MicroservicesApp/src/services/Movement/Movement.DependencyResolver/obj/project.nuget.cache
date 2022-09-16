@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dNroNIdmiDhDrHylkyU+sAX7KKEjrYLnXtONqs04coCeAXTdOUrbhD4l7rrU/zxAktFadfh7VXRMPDDhP5QXjw==",
+  "dgSpecHash": "FuCGFN4fVfOAWIEeWmiRqdrKCcuT+F5Gd9wSlXVA6TlsC/6zOiu0MTQSdfeNQaBNweZuMO1OQnmk+aeMQlxHXg==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\Movement.DependencyResolver\\Movement.DependencyResolver.csproj",
   "expectedPackageFiles": [

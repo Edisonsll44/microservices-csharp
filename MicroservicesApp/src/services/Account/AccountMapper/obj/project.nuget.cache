@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gG3Bs2fIZ764G7L7MBqQ4ehLoG8xkULZul0qS6V7SzbBhP75rDNLrTgZZWlP5D7So97ABCcbpiQiPcVSztKdNg==",
+  "dgSpecHash": "Y5c/gx4MLLNuIWiyBGSofdCalsizX5PL1F+TzDFEqGqw5GlBcFJZ3sJzMuAIm77ocjbMv9vbIWFK5ci75o3oKA==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Account\\AccountMapper\\Account.Mapper.csproj",
   "expectedPackageFiles": [

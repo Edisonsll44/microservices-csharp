@@ -1,0 +1,12 @@
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Domain\bin\Debug\net6.0\Identity.Domain.deps.json
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Domain\bin\Debug\net6.0\Identity.Domain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Domain\bin\Debug\net6.0\Identity.Domain.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.csproj.AssemblyReference.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.AssemblyInfoInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.AssemblyInfo.cs
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.csproj.CoreCompileInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Domain\obj\Debug\net6.0\refint\Identity.Domain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Domain\obj\Debug\net6.0\ref\Identity.Domain.dll

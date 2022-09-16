@@ -112,11 +112,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Script", "04.Script", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07.Proxies", "07.Proxies", "{30CF6B0F-BB61-42C9-A60C-FFFD8B4EE28A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movement.Service.Proxy", "src\services\Movement\Movement.Proxy\Movement.Service.Proxy.csproj", "{BBE45893-691B-4AB0-B8EC-23EBAA471CB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movement.Service.Proxy", "src\services\Movement\Movement.Proxy\Movement.Service.Proxy.csproj", "{BBE45893-691B-4AB0-B8EC-23EBAA471CB0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08.Rules", "08.Rules", "{7293A335-C23B-468B-9DB9-70AAD58D560C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movement.Rules.Business", "src\services\Movement\Movement.Rules.Business\Movement.Rules.Business.csproj", "{BA3C75F6-06DC-46BD-A0C2-A1247D63C689}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movement.Rules.Business", "src\services\Movement\Movement.Rules.Business\Movement.Rules.Business.csproj", "{BA3C75F6-06DC-46BD-A0C2-A1247D63C689}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Api", "01. Api", "{3EB6E3A1-7E66-4C7A-8CF3-5DDDECE0E96A}"
 EndProject
@@ -126,9 +126,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Persitence", "03.Persite
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Models", "04.Models", "{19BA1061-19E0-4069-A459-5D73D9D4EE6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Domain", "src\services\Identity\Identity.Domain\Identity.Domain.csproj", "{7922306B-32E4-445C-B47F-B05A2513B811}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Domain", "src\services\Identity\Identity.Domain\Identity.Domain.csproj", "{7922306B-32E4-445C-B47F-B05A2513B811}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Persistence.Database", "Identity.Persistence.Database\Identity.Persistence.Database.csproj", "{51582866-6784-44DF-9EB7-46E473C537D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Api", "src\services\Identity\Identity.Api\Identity.Api.csproj", "{1F3904C0-A614-4921-AC52-D704C6E639D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Command.Service", "src\services\Identity\Identity.Service\Identity.Command.Service.csproj", "{2C928048-F9C8-4F97-896E-2B7421E051E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Persistence.Database", "src\services\Identity\Identity.Persistence.Database\Identity.Persistence.Database.csproj", "{DC4064CF-0E71-4F6C-93AF-564BB726E12B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.Mapper", "05.Mapper", "{B38FC8D8-5282-4FF0-BC4A-6CD9887CCC4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Mappers", "src\services\Identity\Identity.Mappers\Identity.Mappers.csproj", "{4A103868-42F4-4A9E-B960-610DBE95503E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -240,10 +248,22 @@ Global
 		{7922306B-32E4-445C-B47F-B05A2513B811}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7922306B-32E4-445C-B47F-B05A2513B811}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7922306B-32E4-445C-B47F-B05A2513B811}.Release|Any CPU.Build.0 = Release|Any CPU
-		{51582866-6784-44DF-9EB7-46E473C537D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51582866-6784-44DF-9EB7-46E473C537D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51582866-6784-44DF-9EB7-46E473C537D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51582866-6784-44DF-9EB7-46E473C537D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F3904C0-A614-4921-AC52-D704C6E639D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F3904C0-A614-4921-AC52-D704C6E639D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F3904C0-A614-4921-AC52-D704C6E639D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F3904C0-A614-4921-AC52-D704C6E639D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C928048-F9C8-4F97-896E-2B7421E051E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C928048-F9C8-4F97-896E-2B7421E051E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C928048-F9C8-4F97-896E-2B7421E051E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C928048-F9C8-4F97-896E-2B7421E051E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC4064CF-0E71-4F6C-93AF-564BB726E12B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC4064CF-0E71-4F6C-93AF-564BB726E12B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC4064CF-0E71-4F6C-93AF-564BB726E12B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC4064CF-0E71-4F6C-93AF-564BB726E12B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A103868-42F4-4A9E-B960-610DBE95503E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A103868-42F4-4A9E-B960-610DBE95503E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A103868-42F4-4A9E-B960-610DBE95503E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A103868-42F4-4A9E-B960-610DBE95503E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -306,7 +326,11 @@ Global
 		{151D1F9B-C835-4DF4-998A-C80B11D0C612} = {2A9FB98E-5599-4A09-98EC-99F3636830AB}
 		{19BA1061-19E0-4069-A459-5D73D9D4EE6F} = {2A9FB98E-5599-4A09-98EC-99F3636830AB}
 		{7922306B-32E4-445C-B47F-B05A2513B811} = {19BA1061-19E0-4069-A459-5D73D9D4EE6F}
-		{51582866-6784-44DF-9EB7-46E473C537D3} = {151D1F9B-C835-4DF4-998A-C80B11D0C612}
+		{1F3904C0-A614-4921-AC52-D704C6E639D2} = {3EB6E3A1-7E66-4C7A-8CF3-5DDDECE0E96A}
+		{2C928048-F9C8-4F97-896E-2B7421E051E7} = {A727339D-9B81-4C02-9501-0C3E13124146}
+		{DC4064CF-0E71-4F6C-93AF-564BB726E12B} = {151D1F9B-C835-4DF4-998A-C80B11D0C612}
+		{B38FC8D8-5282-4FF0-BC4A-6CD9887CCC4F} = {2A9FB98E-5599-4A09-98EC-99F3636830AB}
+		{4A103868-42F4-4A9E-B960-610DBE95503E} = {B38FC8D8-5282-4FF0-BC4A-6CD9887CCC4F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {13E456AF-EE51-44E6-A0E4-7440DA1F4726}

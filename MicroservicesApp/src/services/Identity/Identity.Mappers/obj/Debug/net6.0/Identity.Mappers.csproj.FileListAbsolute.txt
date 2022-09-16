@@ -1,0 +1,15 @@
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\bin\Debug\net6.0\Identity.Mappers.deps.json
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\bin\Debug\net6.0\Identity.Mappers.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\bin\Debug\net6.0\Identity.Mappers.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\bin\Debug\net6.0\Identity.Domain.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\bin\Debug\net6.0\Identity.Domain.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\obj\Debug\net6.0\Identity.Mappers.csproj.AssemblyReference.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\obj\Debug\net6.0\Identity.Mappers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\obj\Debug\net6.0\Identity.Mappers.AssemblyInfoInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\obj\Debug\net6.0\Identity.Mappers.AssemblyInfo.cs
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\obj\Debug\net6.0\Identity.Mappers.csproj.CoreCompileInputs.cache
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\obj\Debug\net6.0\Identity.Mappers.csproj.CopyComplete
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\obj\Debug\net6.0\Identity.Mappers.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\obj\Debug\net6.0\refint\Identity.Mappers.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\obj\Debug\net6.0\Identity.Mappers.pdb
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Identity\Identity.Mappers\obj\Debug\net6.0\ref\Identity.Mappers.dll

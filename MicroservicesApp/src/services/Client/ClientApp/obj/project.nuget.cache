@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5jh4QiG777aQCqK1d0FsYxriTWp0BRizbj8wpethFaAdmgdA4Y7AUlHox2d4YgR2bGgGmKgbD+WpolNq8FgZcQ==",
+  "dgSpecHash": "S+tD/ekKnlHPXqbIk5qX/AqpW3b+N4scOLKKq1fRwm8gsYILH9jbSGQunit1jVmCCz0JE6v7EegjiAtj97JQbQ==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientApp\\Client.Api.csproj",
   "expectedPackageFiles": [

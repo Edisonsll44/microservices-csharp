@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6BTxpECRHHC7HuJqeNAEMfNC+Hav2dHych4eBABi6gHWxawh3FBHHBZTYegfaJ/71ElNbFU9MWN9WRxtdV3yaQ==",
+  "dgSpecHash": "BeVQ6bsaeAcjKZs36GMm0+OOhqrN/EOLjQvnpLJH2axTIpdup81XXXjZQi1SYM5rVovlVSEgI+DSNiVoKu9OhA==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\Movement.Proxy\\Movement.Service.Proxy.csproj",
   "expectedPackageFiles": [

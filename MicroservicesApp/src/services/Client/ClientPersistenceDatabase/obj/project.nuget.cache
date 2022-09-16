@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9idHXX6vfXyvpDji+1FnSX53L3THUN6G9hDmum7+t+uhZeBsd5Gm1zuc+Lg1kK1xsHV4F2koYcGaP1yW+qdN2g==",
+  "dgSpecHash": "YAk3p470WJhIEd/afxjiGMlLsCXfFxqITbl1lB6jeWcMH70QOTD+ywbTUtZrqMOfxy2cbce3DRm5tK58x7PA3g==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Client\\ClientPersistenceDatabase\\Client.PersistenceDatabase.csproj",
   "expectedPackageFiles": [

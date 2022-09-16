@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IGvJSzQmJd6lRc988cZL8JXx7bNLWJTncodOM1CZ/e+mzLZOXiMwVCLWkZAUUjBOaEWKHE/VRs99rqrjnvt+Nw==",
+  "dgSpecHash": "geozmekYbSCwN6CAq/c43f1UKK6EDpOmXS8BzU0UIeOs8/EgKJWprNU/b0DI8PgiO3JhGrw8X1Bguk/V2ACtFQ==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\Movement.Rules.Business\\Movement.Rules.Business.csproj",
   "expectedPackageFiles": [

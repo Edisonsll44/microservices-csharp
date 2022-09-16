@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dguinCMFB6OcjlwJuxqnNfVRAgzL0k6ntSsRpOzfE8SQv/XLSpDk0Q5gHk5ksdbOcBNA/br/NAje5E3IGlBD7A==",
+  "dgSpecHash": "ujsy4yh6yRpmjbTYeNqwE/QHuSEzkFiwiYrrw4dJ/NDqdshhPofSPfL7qWHEO1HdAdTOUxpgldeNDSlTXTfilg==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Movement\\AmmountApi\\Movement.Api.csproj",
   "expectedPackageFiles": [
