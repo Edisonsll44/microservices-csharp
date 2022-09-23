@@ -1,12 +1,14 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Movement.Command.Service;
+using Movement.Command.Service.Contracts;
 using Movement.Mapper.Dto;
 using Movement.Query.Service;
 using Movement.Rules.Business;
 
 namespace Movement.Api.Controllers
 {
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/v1/[controller]")]
     [ApiController]
     public class MovementController : ControllerBase
@@ -94,6 +96,23 @@ namespace Movement.Api.Controllers
             try
             {
                 await _movementCommandService.DeleteteMovement(id);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw new Exception(e.Message);
+            }
+        }
+
+
+        [HttpGet]
+        [Route("GetMovementClient")]
+        public async Task<IActionResult> GetMovementClient(DateTime dateQuery, string clientName, string clientId)
+        {
+            try
+            {
+                await _movementQueryService.GetMovementByDateOrClient(dateQuery, clientName, clientId);
                 return Ok();
             }
             catch (Exception e)

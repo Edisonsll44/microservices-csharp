@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "A0JfPUUfpPyJBTxzRsc1KLMCvSrkVuVo/E1oq40hQzKRpuEslkhJ5sxAXANK98+r/k4llWx3Ss7yYeeOUU2IdA==",
+  "dgSpecHash": "LSW1uIVunOTsnTiRs6XzPmvK/fTg6LOu+9CEhr/qU30eLOliIihNzOLd3C2W8z6VYWiIj4cm0jt7UjZKZffYfQ==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Identity\\Identity.Api\\Identity.Api.csproj",
   "expectedPackageFiles": [

@@ -1,9 +1,10 @@
 ﻿using Common.Repository.Generics;
 using Microsoft.AspNetCore.JsonPatch;
+using Movement.Command.Service.Contracts;
 using Movement.Mapper;
 using Movement.Mapper.Dto;
 using Movement.PersistenceDatabase;
-using mov = MovementDomain;
+using mov = Movement.Domain;
 
 namespace Movement.Command.Service
 {
@@ -54,7 +55,7 @@ namespace Movement.Command.Service
 
         decimal GetBalance(int accountId)
         {
-            var movement = _movementRepository.Get<mov.Movement>(v => v.AccountId == accountId).OrderByDescending(f => f.MovementId).FirstOrDefault();
+            var movement = _movementRepository.Get<mov.Movement>(v => v.AccountClientId == accountId).OrderByDescending(f => f.MovementId).FirstOrDefault();
             if (movement == null)
                 return 0;
             return movement.Balance;

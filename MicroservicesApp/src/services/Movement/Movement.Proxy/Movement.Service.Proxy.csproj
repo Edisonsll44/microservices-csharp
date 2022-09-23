@@ -7,16 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Proxies\AccountProxy.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\Client\Client.Mapper\Client.Mapper.csproj" />
     <ProjectReference Include="..\..\Common\Common.Repository\Common.Repository.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Proxies\AccountProxy.cs" />
+    <ProjectReference Include="..\Movement.Mapper\Movement.Mapper.csproj" />
   </ItemGroup>
 
 </Project>

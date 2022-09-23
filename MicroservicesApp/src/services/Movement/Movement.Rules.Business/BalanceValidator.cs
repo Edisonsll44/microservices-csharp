@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using Movement.Mapper.Dto;
 using Movement.PersistenceDatabase;
-using mov = MovementDomain;
+using mov = Movement.Domain;
 
 namespace Movement.Rules.Business
 {
@@ -27,16 +27,16 @@ namespace Movement.Rules.Business
         }
         bool CheckBalance(int accountId)
         {
-            var actualBalance = _movementRepository.Get<mov.Movement>(d => d.AccountId == accountId);
+            var actualBalance = _movementRepository.Get<mov.Movement>(d => d.AccountClientId == accountId);
             if (actualBalance == null)
                 return true;
 
-            return actualBalance.Sum(d=> d.Balance) != 0;
+            return actualBalance.Sum(d => d.Balance) != 0;
         }
 
         async Task<bool> InsufficientBalance(int accountId, decimal balance, string type)
         {
-            var actualBalance = _movementRepository.Get<mov.Movement>(d => d.AccountId == accountId);
+            var actualBalance = _movementRepository.Get<mov.Movement>(d => d.AccountClientId == accountId);
             if (actualBalance == null)
                 return true;
             if (type.Contains("Retiro"))

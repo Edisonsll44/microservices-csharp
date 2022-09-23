@@ -75,3 +75,5 @@ C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\o
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\obj\Debug\net6.0\Client.Api.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\obj\Debug\net6.0\Client.Api.genruntimeconfig.cache
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\obj\Debug\net6.0\ref\Client.Api.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Client\ClientApp\bin\Debug\net6.0\AspNet.Security.OAuth.Validation.dll

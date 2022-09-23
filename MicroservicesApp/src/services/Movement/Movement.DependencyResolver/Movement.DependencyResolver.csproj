@@ -11,9 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Account\Account.Query.Service\Account.Query.Service.csproj" />
-    <ProjectReference Include="..\..\Account\AccountPersistenceDatabase\Account.PersistenceDatabase.csproj" />
     <ProjectReference Include="..\Movement.Common.Service\Movement.Command.Service.csproj" />
+    <ProjectReference Include="..\Movement.Proxy\Movement.Service.Proxy.csproj" />
     <ProjectReference Include="..\Movement.Query.Service\Movement.Query.Service.csproj" />
     <ProjectReference Include="..\Movement.Rules.Business\Movement.Rules.Business.csproj" />
     <ProjectReference Include="..\MovementPersistenceDatabase\Movement.PersistenceDatabase.csproj" />

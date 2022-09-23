@@ -10,5 +10,11 @@ namespace Account.Command.Service.Handlers
         /// <param name="dto"></param>
         /// <returns></returns>
         Task Handle(CommandCreateAccountClientDto dto, CancellationToken token);
+        /// <summary>
+        /// Devuelve las cuentas atadas a un cliente
+        /// </summary>
+        /// <param name="clientId"></param>
+        /// <returns></returns>
+        IEnumerable<CommandCreateAccountClientDto> GetAccountsByClientId(int clientId, string clientName, string dni);
     }
 }

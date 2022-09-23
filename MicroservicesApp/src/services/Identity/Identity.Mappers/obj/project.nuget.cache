@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SmlQslJ3JdHt+7onszU+lOvpyTHrN3riRSxn7nUDOUnuI2Z6UCv7OyISLBgne9f7jIl9UErZAkhFauAc1vYSQQ==",
+  "dgSpecHash": "jg9zJs2Qa+lZ2dCeRUf+aXGBdmiVARk1qjzouhk5Y3ZtXMp2Zh9HVh/MvwOBIbEKXGodJzg97nzodL5P5v3mJQ==",
   "success": true,
   "projectFilePath": "C:\\Me\\Core\\microservices-csharp\\MicroservicesApp\\src\\services\\Identity\\Identity.Mappers\\Identity.Mappers.csproj",
   "expectedPackageFiles": [

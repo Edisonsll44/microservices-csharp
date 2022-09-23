@@ -32,9 +32,9 @@ namespace MovementPersistenceDatabase.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MovementId"), 1L, 1);
 
-                    b.Property<int>("AccountId")
+                    b.Property<int>("AccountClientId")
                         .HasColumnType("int")
-                        .HasColumnName("CuentaId");
+                        .HasColumnName("CuentaClienteId");
 
                     b.Property<decimal>("Balance")
                         .HasColumnType("decimal(18,4)")
@@ -48,6 +48,10 @@ namespace MovementPersistenceDatabase.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("TipoMovimiento");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit")
+                        .HasColumnName("Estado");
 
                     b.Property<string>("Value")
                         .IsRequired()

@@ -1,8 +1,10 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Movement.Command.Service;
+using Movement.Command.Service.Contracts;
 using Movement.PersistenceDatabase;
 using Movement.Query.Service;
 using Movement.Rules.Business;
+using Movement.Service.Proxies;
 
 namespace Movement.DependencyResolver
 {
@@ -13,6 +15,7 @@ namespace Movement.DependencyResolver
             AddRegisterRepositories(services);
             AddRegisterServices(services);
             AddRegisterValidations(services);
+            AddRegisterProxies(services);
             return services;
         }
         public static IServiceCollection AddRegisterServices(this IServiceCollection services)
@@ -31,6 +34,12 @@ namespace Movement.DependencyResolver
         public static IServiceCollection AddRegisterValidations(this IServiceCollection services)
         {
             services.AddTransient<IBalanceValidator, BalanceValidator>();
+            return services;
+        }
+        public static IServiceCollection AddRegisterProxies(this IServiceCollection services)
+        {
+            services.AddTransient<IMovementAccountProxy, MovementAccountProxy>();
+            services.AddTransient<IMovementClientProxy, MovementClientProxy>();
             return services;
         }
     }

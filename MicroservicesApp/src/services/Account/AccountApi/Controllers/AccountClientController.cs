@@ -1,23 +1,29 @@
-﻿using Account.Query.Service;
+﻿using Account.Command.Service.Handlers;
+using Account.Query.Service;
 using AccountMapper.Dto;
 using MediatR;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Account.Api.Controllers
 {
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/v1/[controller]")]
     [ApiController]
     public class AccountClientController : ControllerBase
     {
         private readonly IMediator _mediator;
         private readonly IAccountClientQueryService _accountClientQueryService;
+        private readonly IAccountClientCreateEventHandlerService _accountClientCreateEventHandlerService;
         private readonly ILogger<AccountClientController> _logger;
 
-        public AccountClientController(IMediator mediator, ILogger<AccountClientController> logger, IAccountClientQueryService accountClientQueryService)
+        public AccountClientController(IMediator mediator, ILogger<AccountClientController> logger, IAccountClientQueryService accountClientQueryService, IAccountClientCreateEventHandlerService accountClientCreateEventHandlerService)
         {
             _mediator = mediator;
             _logger = logger;
             _accountClientQueryService = accountClientQueryService;
+            _accountClientCreateEventHandlerService = accountClientCreateEventHandlerService;
         }
 
 
@@ -60,6 +66,22 @@ namespace Account.Api.Controllers
             try
             {
                 var response = await _accountClientQueryService.GetAccountByNameAsync(nameClient);
+                return Ok(response);
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw new Exception(e.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("GetAccountsClient")]
+        public IActionResult GetAccountsClient(int clientId, string clientName, string dni)
+        {
+            try
+            {
+                var response = _accountClientCreateEventHandlerService.GetAccountsByClientId(clientId, clientName, dni);
                 return Ok(response);
             }
             catch (Exception e)

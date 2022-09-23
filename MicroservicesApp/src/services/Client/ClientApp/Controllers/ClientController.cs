@@ -1,10 +1,12 @@
 ﻿using Client.Mapper.Dto;
 using Client.Service.Queries.Contracts;
-using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ClientApp.Controllers
 {
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]    
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]

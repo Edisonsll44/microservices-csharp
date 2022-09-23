@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using me = MovementDomain;
+using me = Movement.Domain;
 
 namespace MovementPersistenceDatabase.Configuration
 {
@@ -14,7 +14,7 @@ namespace MovementPersistenceDatabase.Configuration
                 MovementDate = DateTime.Now,
                 MovementId = 1,
                 MovementType = "Retiro de 575",
-                AccountId = 1
+                AccountClientId = 1
             };
             movements.Add(movement);
             entityBuilder.HasData(movements);

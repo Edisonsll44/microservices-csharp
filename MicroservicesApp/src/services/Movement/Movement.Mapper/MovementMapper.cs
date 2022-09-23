@@ -1,5 +1,5 @@
 ﻿using Movement.Mapper.Dto;
-using mov = MovementDomain;
+using mov = Movement.Domain;
 
 namespace Movement.Mapper
 {
@@ -9,12 +9,11 @@ namespace Movement.Mapper
         {
             return new MovementDto
             {
-                CuentaId = movement.AccountId,
+                CuentaId = movement.AccountClientId,
                 FechaMovimiento = movement.MovementDate,
                 MovimientoId = movement.MovementId,
                 Saldo = movement.Balance,
                 TipoMovimiento = movement.MovementType,
-                Tipo = movement.Value
             };
         }
 
@@ -22,23 +21,21 @@ namespace Movement.Mapper
         {
             return new mov.Movement
             {
-                AccountId = movement.CuentaId,
+                AccountClientId = movement.CuentaId,
                 Balance = tipo.Contains("Deposito") ? movement.Saldo + actualBalance : actualBalance - movement.Saldo,
                 MovementDate = movement.FechaMovimiento,
                 MovementId = movement.MovimientoId,
                 MovementType = movement.TipoMovimiento,
-                Value = movement.Tipo
             };
         }
 
         public static mov.Movement MapDtoToEntity(mov.Movement movement, MovementDto dto)
         {
-            movement.AccountId = dto.CuentaId;
+            movement.AccountClientId = dto.CuentaId;
             movement.MovementId = dto.MovimientoId;
             movement.MovementDate = dto.FechaMovimiento;
             movement.MovementType = dto.TipoMovimiento;
             movement.Balance = dto.Saldo;
-            movement.Value = dto.Tipo;
             return movement;
         }
 
@@ -49,12 +46,31 @@ namespace Movement.Mapper
             {
                 var dto = new MovementDto
                 {
-                    CuentaId = movement.AccountId,
+                    CuentaId = movement.AccountClientId,
                     FechaMovimiento = movement.MovementDate,
                     MovimientoId = movement.MovementId,
                     Saldo = movement.Balance,
                     TipoMovimiento = movement.MovementType,
-                    Tipo = movement.Value
+                };
+                clientsDto.Add(dto);
+            }
+            return clientsDto;
+        }
+
+        public static IEnumerable<MovementDto> MapEntityToDtoCollection(IEnumerable<mov.Movement> movements, string clientName, string dni, IEnumerable<AccountClientDto> accountsClient)
+        {
+            var clientsDto = new List<MovementDto>();
+            foreach (var movement in movements)
+            {
+                var dto = new MovementDto
+                {
+                    FechaMovimiento = movement.MovementDate,
+                    Cliente = accountsClient.FirstOrDefault(v => v.CuentaClienteId == movement.AccountClientId).NombreCliente,
+                    NumeroCuenta = accountsClient.FirstOrDefault(v => v.CuentaClienteId == movement.AccountClientId).NumeroCuenta,
+                    TipoCuenta = accountsClient.FirstOrDefault(v => v.CuentaClienteId == movement.AccountClientId).TipoCuenta,
+                    Saldo = movement.Balance,
+                    Estado = movement.Status ? "True" : "False",
+                    Descripcion = movement.MovementType
                 };
                 clientsDto.Add(dto);
             }

@@ -1,12 +1,30 @@
 using Account.Service.Proxies;
 using MediatR;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System.Reflection;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var secretKey = builder.Configuration.GetValue<string>("secretKey");
 // Add services to the container.
-
+builder.Services.AddAuthentication(d =>
+{
+    d.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    d.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(t =>
+{
+    t.RequireHttpsMetadata = false;
+    t.SaveToken = true;
+    t.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey)),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
+});
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

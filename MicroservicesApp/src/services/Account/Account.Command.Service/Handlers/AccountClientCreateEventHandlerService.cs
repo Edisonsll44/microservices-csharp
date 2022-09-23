@@ -2,6 +2,7 @@
 using Account.Service.Proxies;
 using AccountMapper.Dto;
 using MediatR;
+using acc = AccountDomain;
 
 namespace Account.Command.Service.Handlers
 {
@@ -17,6 +18,14 @@ namespace Account.Command.Service.Handlers
             _accountProxy = accountProxy;
             _clientProxy = clientProxy;
         }
+
+        public IEnumerable<CommandCreateAccountClientDto> GetAccountsByClientId(int clientId, string clientName, string dni)
+        {
+            var acounts = _accountClientRepository.Get<acc.AccountClient>(c => c.ClientId == clientId);
+            var accountsDto = AccountMapper.AccountMapper.MapEntityToDtoCollection(acounts, clientName, dni);
+            return accountsDto;
+        }
+
         public async Task Handle(CommandCreateAccountClientDto dto, CancellationToken token)
         {
             var accountId = await _accountProxy.GetAccountIdAsync(dto.TipoCuenta);

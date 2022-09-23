@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using me = MovementDomain;
+using me = Movement.Domain;
 using MovementPersistenceDatabase.Configuration;
 
 namespace MovementPersistenceDatabase
@@ -22,7 +22,7 @@ namespace MovementPersistenceDatabase
 
         private void ModelConfig(ModelBuilder modelBuilder)
         {
-            new MovementConfiguration(modelBuilder.Entity<MovementDomain.Movement>());
+            //new MovementConfiguration(modelBuilder.Entity<Movement.Movement>());
         }
     }
 }

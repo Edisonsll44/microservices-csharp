@@ -90,3 +90,4 @@ C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Account.Service.Proxies.dll
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Account.Service.Proxies.pdb
 C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\obj\Debug\net6.0\Account.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Me\Core\microservices-csharp\MicroservicesApp\src\services\Account\AccountApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -10,5 +10,6 @@ namespace AccountDomain
         [Column("TipoCuenta")]
         public string AccountType { get; set; }
 
+        public ICollection<AccountClient> CuentasCliente { get; set; }
     }
 }
